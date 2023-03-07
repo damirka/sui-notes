@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "b4bcc1860509ebed",
+    "type": "split",
+    "children": [
+      {
+        "id": "847a415a75819342",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7d80e767b9cceb1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Collectibles/Sui Object Display Proposal.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ce4c99707580579b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sui App Experience.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f0dabdb263aae0a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Collectibles/Using Display.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1daaa31ecf811344",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Collectibles/Setting up Publisher.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "df2dbccbacb7a88d",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f922c3e8fb0e7cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ada542daefe8bf0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "60d7b6ca3b0c03e4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "37b3f14ee514bfc6",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a5a58d9093e3281",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "284371b4f7ab0003",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Collectibles/Setting up Publisher.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "1daaa31ecf811344",
+  "lastOpenFiles": [
+    "Collectibles/Objects on Sui and non-fungibility.md",
+    "Collectibles/Using Display.md",
+    "Collectibles/Setting up Publisher.md",
+    "Collectibles/Sui Object Display Proposal.md",
+    "Sui App Experience.md",
+    "Untitled.canvas",
+    "what is me.md",
+    "ahhahaa/Chupa Kabra.md",
+    "blah blah.md",
+    "hahahah.md"
+  ]
+}
