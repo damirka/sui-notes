@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "847a415a75819342",
+        "id": "17ad91d901da4b60",
         "type": "tabs",
         "children": [
           {
-            "id": "7d80e767b9cceb1a",
+            "id": "00b5d3c02a4b2ac5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Collectibles/Sui Object Display Proposal.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ce4c99707580579b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sui App Experience.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f0dabdb263aae0a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Collectibles/Using Display.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1daaa31ecf811344",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Collectibles/Setting up Publisher.md",
+                "file": "Display/Special Cases in Display.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Collectibles/Setting up Publisher.md",
+                "file": "Display/Special Cases in Display.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,17 +104,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "1daaa31ecf811344",
+  "active": "00b5d3c02a4b2ac5",
   "lastOpenFiles": [
+    "Display/Sui Object Display Proposal.md",
     "Collectibles/Objects on Sui and non-fungibility.md",
-    "Collectibles/Using Display.md",
-    "Collectibles/Setting up Publisher.md",
-    "Collectibles/Sui Object Display Proposal.md",
+    "Coin Management.md",
+    "Display/Using Display.md",
     "Sui App Experience.md",
+    "Display/Special Cases in Display.md",
+    "Collectibles/Setting up Publisher.md",
     "Untitled.canvas",
     "what is me.md",
-    "ahhahaa/Chupa Kabra.md",
-    "blah blah.md",
-    "hahahah.md"
+    "ahhahaa/Chupa Kabra.md"
   ]
 }
