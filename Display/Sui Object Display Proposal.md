@@ -15,12 +15,12 @@ Here’s a dummy example of an Object (asset) defined on Sui. A creator of such 
 ```rust
 module my_app::sui_buddy {  
 	/// "NFT" Object defined on Sui  
-	struct Buddy {    
-		/// Image URL    
-		img: Url,    
-		/// Unique name of the    
-		name: String,  
-	}
+    struct Buddy {    
+        /// Image URL    
+        img: Url,    
+        /// Unique name of the    
+        name: String,  
+    }
 }
 ```
 
@@ -28,13 +28,13 @@ So let’s look at another module published by some other imaginary creator. How
 
 ```rust
 module haha_labs::ticket {  
-	/// Object used to sell tickets to events  
-	struct EventTicket {    
-		/// Event URL    
-		url: Url,    
-		/// QR Code URL to enter the event    
-		ticket_qr_url: Url,  
-	}
+    /// Object used to sell tickets to events  
+    struct EventTicket {    
+        /// Event URL    
+        url: Url,    
+        /// QR Code URL to enter the event    
+        ticket_qr_url: Url,  
+    }
 }
 ```
 
@@ -46,16 +46,16 @@ Let’s modify the Ticket example to make it follow currently required set of fi
 
 ```rust
 module haha_labs::ticket {  
-	struct EventTicket {    
-		/// Always with the same value: "events.sui ticket"    
-		name: String,    
-		/// Now an image URL - the same for all tickets    
-		/// Example: https://events.sui/ticket_img.png    
-		url: Url,    
-		/// Used to be `url` in the previous example    
-		event_url: Url,    
-		ticket_qr_url: Url  
-	}
+    struct EventTicket {    
+        /// Always with the same value: "events.sui ticket"    
+        name: String,    
+        /// Now an image URL - the same for all tickets    
+        /// Example: https://events.sui/ticket_img.png    
+        url: Url,    
+        /// Used to be `url` in the previous example    
+        event_url: Url,    
+        ticket_qr_url: Url  
+    }
 }
 ```
 

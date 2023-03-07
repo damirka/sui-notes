@@ -8,8 +8,8 @@ For the `sui::collectible::Collectible` we took the path of a smaller object wit
 ```json
 // JSON-like `Display<Collectible<T>>`
 {
-	"name": "{name.default('')}",
-	"description": "{description.default('Ooh, this is lovely')}"
+    "name": "{name.default('')}",
+    "description": "{description.default('Ooh, this is lovely')}"
 }
 ```
 

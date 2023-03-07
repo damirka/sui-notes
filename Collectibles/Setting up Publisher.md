@@ -1,0 +1,1 @@
+Publisher Object serves as a way to represent publisher

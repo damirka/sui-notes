@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Display/Special Cases in Display.md",
+                "file": "Collectibles/Setting up Publisher.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da7ad3c7cb7a5358",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Collectibles/Objects on Sui and non-fungibility.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Display/Special Cases in Display.md",
+                "file": "Collectibles/Objects on Sui and non-fungibility.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,17 +117,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "00b5d3c02a4b2ac5",
+  "active": "da7ad3c7cb7a5358",
   "lastOpenFiles": [
+    "Collectibles/Setting up Publisher.md",
+    "Collectibles/Untitled.md",
+    "Display/Using Display.md",
     "Display/Sui Object Display Proposal.md",
+    "Display/Special Cases in Display.md",
     "Collectibles/Objects on Sui and non-fungibility.md",
     "Coin Management.md",
-    "Display/Using Display.md",
     "Sui App Experience.md",
-    "Display/Special Cases in Display.md",
-    "Collectibles/Setting up Publisher.md",
     "Untitled.canvas",
-    "what is me.md",
-    "ahhahaa/Chupa Kabra.md"
+    "what is me.md"
   ]
 }
