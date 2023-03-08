@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "17ad91d901da4b60",
+        "id": "b86a417588241aa6",
         "type": "tabs",
         "children": [
           {
-            "id": "00b5d3c02a4b2ac5",
+            "id": "1e46f64e02c0f221",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Collectibles/Setting up Publisher.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "da7ad3c7cb7a5358",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Collectibles/Objects on Sui and non-fungibility.md",
+                "file": "Display/Sui Object Display Proposal.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Collectibles/Objects on Sui and non-fungibility.md",
+                "file": "Display/Sui Object Display Proposal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,17 +104,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "da7ad3c7cb7a5358",
+  "active": "1e46f64e02c0f221",
   "lastOpenFiles": [
-    "Collectibles/Setting up Publisher.md",
-    "Collectibles/Untitled.md",
-    "Display/Using Display.md",
-    "Display/Sui Object Display Proposal.md",
     "Display/Special Cases in Display.md",
+    "Display/Display not Metadata.md",
     "Collectibles/Objects on Sui and non-fungibility.md",
+    "Collectibles/Untitled.md",
+    "Guides/Using Display.md",
+    "Guides/Setting up Publisher.md",
+    "Display/Sui Object Display Proposal.md",
+    "Sui Display.md",
     "Coin Management.md",
-    "Sui App Experience.md",
-    "Untitled.canvas",
-    "what is me.md"
+    "Sui App Experience.md"
   ]
 }
