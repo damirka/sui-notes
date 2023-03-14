@@ -13,13 +13,13 @@ If every object on Sui is already its own thing, why can’t we agree on field n
 Here’s a dummy example of an Object (asset) defined on Sui. A creator of such an object might assume that every Wallet should automatically display their object (since names are very logical from a human standpoint).
 
 ```rust
-module my_app::sui_buddy {  
-	/// "NFT" Object defined on Sui  
-    struct Buddy {    
-        /// Image URL    
-        img: Url,    
-        /// Unique name of the    
-        name: String,  
+module my_app::sui_buddy {
+	/// "NFT" Object defined on Sui
+    struct Buddy {
+        /// Image URL
+        img: Url,
+        /// Unique name of the
+        name: String,
     }
 }
 ```
@@ -27,13 +27,13 @@ module my_app::sui_buddy {
 So let’s look at another module published by some other imaginary creator. How should this object be displayed in a wallet? Is there a way to have both the `Buddy` from the example above and the `Ticket` from this one being displayed correctly? And what correctly means in this context?
 
 ```rust
-module haha_labs::ticket {  
-    /// Object used to sell tickets to events  
-    struct EventTicket {    
-        /// Event URL    
-        url: Url,    
-        /// QR Code URL to enter the event    
-        ticket_qr_url: Url,  
+module haha_labs::ticket {
+    /// Object used to sell tickets to events
+    struct EventTicket {
+        /// Event URL
+        url: Url,
+        /// QR Code URL to enter the event
+        ticket_qr_url: Url,
     }
 }
 ```
@@ -45,16 +45,16 @@ Looking at examples above we already see the conflict in interpretations of fiel
 Let’s modify the Ticket example to make it follow currently required set of fields:
 
 ```rust
-module haha_labs::ticket {  
-    struct EventTicket {    
-        /// Always with the same value: "events.sui ticket"    
-        name: String,    
-        /// Now an image URL - the same for all tickets    
-        /// Example: https://events.sui/ticket_img.png    
-        url: Url,    
-        /// Used to be `url` in the previous example    
-        event_url: Url,    
-        ticket_qr_url: Url  
+module haha_labs::ticket {
+    struct EventTicket {
+        /// Always with the same value: "events.sui ticket"
+        name: String,
+        /// Now an image URL - the same for all tickets
+        /// Example: https://events.sui/ticket_img.png
+        url: Url,
+        /// Used to be `url` in the previous example
+        event_url: Url,
+        ticket_qr_url: Url
     }
 }
 ```
@@ -65,7 +65,7 @@ It’s not a problem if we look at a single object. But it becomes one if the ap
 
 ## Introducing Display
 
-As a part of preparation for this proposal, we landed a very powerful feature, which allows package creators (developers) to create a Publisher object (see [the Pull Request](https://t.co/L4TapTAFZ9)). The Publisher object acts as a *Capability* and a *Witness of publishing* making it possible to check whether some action was performed by an *owner (creator) of type*. For example: as a publisher of a game “SuiWarriors” with an asset “Warrior”, I can prove to the marketplace or any other application that I am the publisher of this type; and the third party can then unblock publisher-only functionality.
+As a part of preparation for this proposal, we landed a very powerful feature, which allows package creators (developers) to create a Publisher object (see [the Pull Request](https://github.com/MystenLabs/sui/pull/7196)). The Publisher object acts as a *Capability* and a *Witness of publishing* making it possible to check whether some action was performed by an *owner (creator) of type*. For example: as a publisher of a game “SuiWarriors” with an asset “Warrior”, I can prove to the marketplace or any other application that I am the publisher of this type; and the third party can then unblock publisher-only functionality.
 
 Applied to the topic of the current proposal: as a publisher of a type T, I (and only I) can create a `Display<T>` object.
 
@@ -99,13 +99,13 @@ Overall, most of the fields are common, and in the current state of the Sui Ecos
 
 ## Display syntax
 
-For the tool to be usable and universal, the pattern syntax should cover 4 most common scenarios: 
+For the tool to be usable and universal, the pattern syntax should cover 4 most common scenarios:
 
-1. Using a field of an Object (eg “name” in `User { id, name }`) 
+1. Using a field of an Object (eg “name” in `User { id, name }`)
 
-2. Using a dynamic field and its fields 
+2. Using a dynamic field and its fields
 
-3. Using a field in a Bag 
+3. Using a field in a Bag
 
 4. Using a field in a Table
 
@@ -254,5 +254,5 @@ Object => TypeId
 TypeId => DisplayId => { pattern[] }
 
 Object + pattern[]
- 
+
 ```

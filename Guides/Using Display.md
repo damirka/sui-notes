@@ -6,9 +6,9 @@ Display is created via the `display::new<T>` call, which can be performed either
 
 ```rust
 module sui::display {
-    /// Get a new Display object for the `T`. 
+    /// Get a new Display object for the `T`.
     ///
-    /// Publisher must be the publisher of the T, `from_package` 
+    /// Publisher must be the publisher of the T, `from_package`
     /// check is performed.
     public fun new<T>(pub: &Publisher): Display<T> { /* ... */ }
 }
@@ -22,7 +22,7 @@ module sui::display {
         self: &mut Display,
         keys: vector<String>,
         values: vector<String
-    ) { /* ... */ } 
+    ) { /* ... */ }
 
     /// Edit a single field
     public fun edit(self: &mut Display, key: String, value: String) { /* ... */ }
@@ -32,11 +32,12 @@ module sui::display {
 }
 ```
 
-To apply changes and set the Display for the T, one last call is required:
+To apply changes and set the Display for the T, one last call is required. `update_version` publishes version by emitting an event which Full Node listens to and uses to get a template for the type.
 ```rust
 module sui::display {
-    /// 
+    ///
     public fun update_version(self: &mut Display) { /* ... */ }
 }
 ```
 
+For the client implementation guide see [[Implementing Display on Clients]]

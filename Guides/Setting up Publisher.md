@@ -6,7 +6,7 @@ To set up a Publisher, an One-Time-Witness (OTW) is requred - this way we ensure
 
 ```rust
 /// Dummy example of a package that defines an OTW and claims
-/// a `Publisher` object for the sender;
+/// a `Publisher` object for the sender. While not giving any
 module example::owner {
     use sui::tx_context::{sender, TxContext};
     use sui::transfer;
@@ -41,3 +41,7 @@ module example::owner {
 }
 ```
 
+Cases when `Publisher` object is needed in the Sui Framework:
+
+- Creating a `Display<T>` object to define an off-chain representation of the type. For more details visit [[Using Display]] page.
+- 

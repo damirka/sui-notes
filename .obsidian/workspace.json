@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b86a417588241aa6",
+        "id": "fff2ea2b79b226cc",
         "type": "tabs",
         "children": [
           {
-            "id": "1e46f64e02c0f221",
+            "id": "3d5626a81a490883",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Display/Sui Object Display Proposal.md",
+                "file": "Topics to cover.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Display/Sui Object Display Proposal.md",
+                "file": "Topics to cover.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,17 +104,36 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "1e46f64e02c0f221",
+  "active": "3d5626a81a490883",
   "lastOpenFiles": [
-    "Display/Special Cases in Display.md",
-    "Display/Display not Metadata.md",
-    "Collectibles/Objects on Sui and non-fungibility.md",
-    "Collectibles/Untitled.md",
+    "Checkup.md",
+    "Implementing Display on Clients.md",
+    "Topics to cover.md",
+    "Writeups/Utilizing Display for speed and efficiency.md",
+    "Writeups/Dynamic fields and careful use.md",
+    "Writeups",
+    "Untitled",
     "Guides/Using Display.md",
     "Guides/Setting up Publisher.md",
     "Display/Sui Object Display Proposal.md",
-    "Sui Display.md",
-    "Coin Management.md",
-    "Sui App Experience.md"
+    "Display/Special Cases in Display.md",
+    "Display/Display not Metadata.md",
+    "export/Guides/Using Display.md",
+    "export/Guides/Setting up Publisher.md",
+    "export/Guides",
+    "export/Display/Sui Object Display Proposal.md",
+    "export/Display/Special Cases in Display.md",
+    "export/Display/Display not Metadata.md",
+    "export/Display",
+    "export/Checkup.md",
+    "export/Collectibles/Untitled.md",
+    "export/Collectibles/Objects on Sui and non-fungibility.md",
+    "export/Collectibles",
+    "export/Implementing Display on Clients.md",
+    "export/LICENSE",
+    "export",
+    "Collectibles/Objects on Sui and non-fungibility.md",
+    "Collectibles/Untitled.md",
+    "Sui Display.md"
   ]
 }
