@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fff2ea2b79b226cc",
+        "id": "9bd13b93487b779a",
         "type": "tabs",
         "children": [
           {
-            "id": "3d5626a81a490883",
+            "id": "c463e829658dc74d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Topics to cover.md",
+                "file": "Writeups/Kiosk - a trading tool with rich transfer configuration.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topics to cover.md",
+                "file": "Writeups/Kiosk - a trading tool with rich transfer configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,20 +104,27 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "3d5626a81a490883",
+  "active": "c463e829658dc74d",
   "lastOpenFiles": [
+    "Topics to cover.md",
+    "Display/Sui Object Display Proposal.md",
+    "Display/Display not Metadata.md",
+    "Display/Special Cases in Display.md",
+    "Guides/Using Display.md",
+    "Writeups/Coin and Balance.md",
+    "Extendability Practices.md",
+    "Writeups/Utilizing Display for speed and efficiency.md",
+    "Writeups/Transaction Block FAQ.md",
+    "Writeups/Kiosk - a trading tool with rich transfer configuration.md",
+    "Writeups/Dynamic fields and careful use.md",
+    "Writeups/SuiFrens Architecture.md",
+    "Collectibles/Objects on Sui and non-fungibility.md",
+    "Guides/Setting up Publisher.md",
+    "Untitled.canvas",
     "Checkup.md",
     "Implementing Display on Clients.md",
-    "Topics to cover.md",
-    "Writeups/Utilizing Display for speed and efficiency.md",
-    "Writeups/Dynamic fields and careful use.md",
     "Writeups",
     "Untitled",
-    "Guides/Using Display.md",
-    "Guides/Setting up Publisher.md",
-    "Display/Sui Object Display Proposal.md",
-    "Display/Special Cases in Display.md",
-    "Display/Display not Metadata.md",
     "export/Guides/Using Display.md",
     "export/Guides/Setting up Publisher.md",
     "export/Guides",
@@ -132,8 +139,6 @@
     "export/Implementing Display on Clients.md",
     "export/LICENSE",
     "export",
-    "Collectibles/Objects on Sui and non-fungibility.md",
-    "Collectibles/Untitled.md",
-    "Sui Display.md"
+    "Collectibles/Untitled.md"
   ]
 }

@@ -2,7 +2,7 @@ In this document we go over a few different kinds of objects trying to evaluate 
 
 ## The Problem
 
-Given the Sui Object Model, typical Ethereum-style approach for metadata (storing it in IPFS, assigning to every token_id) is hardly applicable - there's no centralized control over an asset that is already owned, and the rich on-chain programmability implies dynamic object creation. Not to mention, following this approach would be a limiting and nonoptimal practice. 
+Given the Sui Object Model, typical Ethereum-style approach for metadata (storing it in IPFS, assigning to every token_id) is hardly applicable - there's no centralized control over an asset that is already owned, and the rich on-chain programmability implies dynamic object creation. Not to mention, following this approach would be a limiting and nonoptimal practice.
 
 To illustrate that, we will go through 4 different groups of objects. Capys have three of them and perfectly match as the live example, and for the fourth one we use a "devnet NFT" - dummy example of an NFT-like object on Sui.
 
@@ -22,13 +22,13 @@ module capy::utility {
 ```
 
 #### Typical objects with data duplication
-Common case with in-game items - a lot of similar objects grouped by some criteria. With objects like these it is important to find a way to optimize their size and minting / updating costs. Usually there's only one image or URL per group or criteria, and storing it inside every object is not the best practice. 
+Common case with in-game items - a lot of similar objects grouped by some criteria. With objects like these it is important to find a way to optimize their size and minting / updating costs. Usually there's only one image or URL per group or criteria, and storing it inside every object is not the best practice.
 
-Another case is that some of the in-game items are minted by user when a game allows them or they make a purchase, and for that to happen; some IPFS/Arweave metadata should be pre-created and stored somewhere which requires additional logic usually not related to the in-game properties of the item. 
+Another case is that some of the in-game items are minted by user when a game allows them or they make a purchase, and for that to happen; some IPFS/Arweave metadata should be pre-created and stored somewhere which requires additional logic usually not related to the in-game properties of the item.
 
 ```rust
 module capy::capy_items {
-    /// A wearable Capy Item. For some items there can be an 
+    /// A wearable Capy Item. For some items there can be an
     /// unlimited supply. And items with the same name are identical
     struct CapyItem has key, store {
         id: UID,
@@ -45,7 +45,7 @@ To achieve that, Capys have their API service to re-render the image on an user-
 ```rust
 module capy::capy {
     /// A Capy - very diverse object with different combination
-    /// of genes. Created dynamically + for images a dynamic SVG 
+    /// of genes. Created dynamically + for images a dynamic SVG
     /// generation is used.
     struct Capy has key, store {
         id: UID,
@@ -86,8 +86,8 @@ The basic set of properties that we suggest to use is:
 - _description_ - a broader displayable description
 - _link_ - a link to an object in an application / external link
 - _image_url_ - an URL or a blob with an image
-- _project_url_ - a link to the website 
-- _creator_ - mentions the creator 
+- _project_url_ - a link to the website
+- _creator_ - mentions the creator
 
 Experimental (work in progress):
 - _owns_ - an ID of the object which this object grants ownership for
@@ -130,7 +130,7 @@ In case when IPFS (or any other storage provider) is used to upload assets, temp
 
 
 #### Utility
- 
+
 Utility objects get a way to be displayed just like any other object without overloading the package and the type definition with unnecessary fields. Single definition of Display covers all of the objects, and Capabilities usually serve one purpose and can be described statically.
 ```rust
 struct CapyManagerCap has key, store { id: UID }
@@ -198,7 +198,7 @@ There's a set of special cases which are pretty common on Sui and require extra 
 
 ### Creating a `Display<T>`  for a `Wrapper<T>`
 
-When building a wrapper type, it is the responsibility of the wrapper module to provide access to inner Display's. An example of a module that does that and provides the Display for the container with a type parameter is our [`sui::collectible`](https://github.com/MystenLabs/sui/blob/main/crates/sui-framework/sources/collectible.move) module. 
+When building a wrapper type, it is the responsibility of the wrapper module to provide access to inner Display's. An example of a module that does that and provides the Display for the container with a type parameter is our [`sui::collectible`](https://github.com/MystenLabs/sui/blob/main/crates/sui-framework/sources/collectible.move) module.
 
 It is enough for the wrapper module to use their `Publisher` object to create `Display` for any type parameter `T` in their `Wrapper<T>`.
 
@@ -216,4 +216,3 @@ If a `Display<Wrapper<ObjectPlaceholder>>` is defined and published, it will be 
 ### Inheritance
 
 Some modules provide a "thin" wrapper with some functionality on top while keeping the most of the data in the wrapped object. And in some cases inheriting display for the inner `T` might be the way to do. For that we're considering adding an `"inherit()"` function to the template engine to allow reusing the property of the `T` instead of overriding it or forcing creators or `T` create a separate Display for the `Wrapper<T>`. One of the goals of the Display system is minimizing effort of a publisher, allowing third party extensions to adapt to the original type.
-

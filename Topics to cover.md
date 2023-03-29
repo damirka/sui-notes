@@ -1,9 +1,14 @@
 
 - [[Dynamic fields and careful use]]
-- [[Custom Key for Dynamic Field]]
+- [[Custom Key for Dynamic Field]] - security guarantees 
 - [[Exposing UID]] - object as a container + authorization based on custom keys
-- [[Extendability Practices]] 
+- [[Extendability Practices]] - exposing UID, modular structure
 - [[Programmable Transactions and the way they change Sui Move]]
-- [[BCS - efficiency and customization]] 
+- [[BCS - efficiency and customization]]
 - [[Utilizing Display for speed and efficiency]] - using FN quick dynamic field access to
 - [[Sui Creator Bundle]] - simple scenario for the most common use case
+- [[Coin and Balance]]
+- [[Potato Sack (Bag in a HotPotato)]] 
+- [[Rolling Potato]] - potato with a counter 
+- [[SuiFrens Architecture]]
+- 
