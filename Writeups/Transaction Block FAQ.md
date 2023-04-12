@@ -8,3 +8,12 @@ How do I make a vector of Coin or any object? For that, there's a special call -
 let [coin_vec] = tx.makeMoveVec([tx.object(...), tx.object(...)]);
 ```
 
+
+- Option::some() for T
+- transfer vec?
+- pure vs object
+- Option(T)
+- Reuse input multiple times (explicit input)
+- reuse versions of objects
+
+- detailed guide on TxBlock; 

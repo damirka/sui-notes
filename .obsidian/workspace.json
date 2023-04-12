@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9bd13b93487b779a",
+        "id": "3407bc554737c413",
         "type": "tabs",
         "children": [
           {
-            "id": "c463e829658dc74d",
+            "id": "252cb1293d5e9a4e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Kiosk - a trading tool with rich transfer configuration.md",
+                "file": "Writeups/Transaction Block FAQ.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Kiosk - a trading tool with rich transfer configuration.md",
+                "file": "Writeups/Transaction Block FAQ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,27 +104,29 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "c463e829658dc74d",
+  "active": "252cb1293d5e9a4e",
   "lastOpenFiles": [
+    "Writeups/Utilizing Display for speed and efficiency.md",
+    "Writeups/SuiFrens Architecture.md",
+    "Writeups/Kiosk - a trading tool with rich transfer configuration.md",
+    "Writeups/Dynamic fields and careful use.md",
+    "Writeups/Adding Rules to the TransferPolicy.md",
+    "Writeups/Transaction Block FAQ.md",
     "Topics to cover.md",
+    "Images/kiosk_scheme.jpg",
+    "Images",
     "Display/Sui Object Display Proposal.md",
     "Display/Display not Metadata.md",
     "Display/Special Cases in Display.md",
     "Guides/Using Display.md",
     "Writeups/Coin and Balance.md",
     "Extendability Practices.md",
-    "Writeups/Utilizing Display for speed and efficiency.md",
-    "Writeups/Transaction Block FAQ.md",
-    "Writeups/Kiosk - a trading tool with rich transfer configuration.md",
-    "Writeups/Dynamic fields and careful use.md",
-    "Writeups/SuiFrens Architecture.md",
     "Collectibles/Objects on Sui and non-fungibility.md",
     "Guides/Setting up Publisher.md",
     "Untitled.canvas",
     "Checkup.md",
     "Implementing Display on Clients.md",
     "Writeups",
-    "Untitled",
     "export/Guides/Using Display.md",
     "export/Guides/Setting up Publisher.md",
     "export/Guides",
@@ -138,7 +140,6 @@
     "export/Collectibles",
     "export/Implementing Display on Clients.md",
     "export/LICENSE",
-    "export",
-    "Collectibles/Untitled.md"
+    "export"
   ]
 }
