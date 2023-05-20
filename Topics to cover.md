@@ -11,4 +11,10 @@
 - [[Potato Sack (Bag in a HotPotato)]] 
 - [[Rolling Potato]] - potato with a counter 
 - [[SuiFrens Architecture]]
-- 
+- [[Building to last]] - with package upgrades in mind
+- [[Extending Kiosk]] - build your own dream trading tool
+- [[Kiosk package]]
+- [[Capabilities for Objects]] - objects have their "inventory" 
+- [[Avoiding strict fn signatures with UIDs]]
+- [[Planning an app]] - how to prepare the codebase for changing business requirements
+- [[Package Upgrades hitting the package size limit]] 
