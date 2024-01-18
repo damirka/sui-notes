@@ -11,7 +11,7 @@
     --content-max-width: 750px;
     --menu-bar-height: 50px;
     --mono-font: 'Spot Mono', Menlo, Monaco, 'Courier New', monospace;
-    --code-font-size: 1em /* please adjust the ace font size accordingly in editor.js */;
+    --code-font-size: 0.9em /* please adjust the ace font size accordingly in editor.js */;
     --code-line-height: 1.5em;
     --code-font-weight: 300;
 }
