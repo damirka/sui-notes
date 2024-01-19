@@ -3,11 +3,11 @@
 - [Introduction](README.md)
 - [Foreword]()
 - [Overview]()
-    - [What is Move](what-is-move.md)
-    - [What is Sui](what-is-sui.md)
-    - [History](history.md)
-    - [Fast Path](fast-path.md)
-    - [Consensus](consensus.md)
+    - [What is Move]() <!-- (what-is-move.md) -->
+    - [What is Sui]() <!-- (what-is-sui.md) -->
+    - [History]() <!-- (history.md) -->
+    - [Fast Path]()  <!-- (fast-path.md) -->
+    - [Consensus]() <!-- (consensus.md) -->
 - [Getting Started]()
     - [Install Sui](install-sui.md)
     - [Set up your IDE](ide-support.md)
