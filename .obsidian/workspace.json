@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kiosk/Kiosk Extensions & Security Analysis.md",
+                "file": "src/your-first-move/debugging.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "328ea3f0be7d612a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/your-first-move/hello-world.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "37b3f14ee514bfc6",
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kiosk/Kiosk Extensions & Security Analysis.md",
+                "file": "src/your-first-move/debugging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,8 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -115,12 +125,33 @@
   },
   "active": "3be7ee729d7e92cd",
   "lastOpenFiles": [
+    "book/foreword",
+    "src/foreword",
+    "book/searcher.js",
+    "book/mark.min.js",
+    "book/elasticlunr.min.js",
+    "book/searchindex.js",
+    "book/searchindex.json",
+    "book/fonts/fonts.css",
+    "book/fonts/Spot-MonoRegularItalic.woff2",
+    "book/fonts/Spot-MonoRegular.woff2",
+    "book/fonts/Spot-MonoMediumItalic.woff2",
+    "book/FontAwesome/fonts/fontawesome-webfont.svg",
+    "book/favicon.svg",
+    "book/favicon.png",
+    "src/your-first-move/adding-tests.md",
+    "src/SUMMARY.md",
+    "src/your-first-move/hello-world.md",
+    "src/your-first-move/your-first-move.md",
+    "src/what-is-sui.md",
+    "src/what-is-move.md",
+    "src/option.md",
+    "src/managing-collections-with-vectors.md",
     "Kiosk Permissions.md",
     "Untitled.canvas",
     "Kiosk/Kiosk Extensions & Security Analysis.md",
     "Kiosk/Architecture Philosophy.md",
     "Kiosk/Trading Framework.md",
-    "Kiosk",
     "Topics to cover.md",
     "Planning an app.md",
     "Writeups/Adding Rules to the TransferPolicy.md",
@@ -130,26 +161,10 @@
     "Writeups/Kiosk - a trading tool with rich transfer configuration.md",
     "Writeups/Transaction Block FAQ.md",
     "Images/kiosk_scheme.jpg",
-    "Images",
     "Display/Sui Object Display Proposal.md",
     "Display/Display not Metadata.md",
     "Display/Special Cases in Display.md",
     "Guides/Using Display.md",
-    "Writeups/Coin and Balance.md",
-    "Extendability Practices.md",
-    "Collectibles/Objects on Sui and non-fungibility.md",
-    "Guides/Setting up Publisher.md",
-    "Checkup.md",
-    "Implementing Display on Clients.md",
-    "Writeups",
-    "export/Guides/Using Display.md",
-    "export/Guides/Setting up Publisher.md",
-    "export/Guides",
-    "export/Display/Sui Object Display Proposal.md",
-    "export/Display/Special Cases in Display.md",
-    "export/Display",
-    "export/Collectibles",
-    "export/LICENSE",
-    "export"
+    "Writeups/Coin and Balance.md"
   ]
 }

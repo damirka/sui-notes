@@ -10,5 +10,10 @@
     "downscalePercent": 100
   },
   "alwaysUpdateLinks": true,
-  "useTab": false
+  "useTab": false,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "src",
+  "showInlineTitle": false
 }
