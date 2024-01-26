@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "542ec416090d0453",
+        "id": "f1108956ffd5fbdb",
         "type": "tabs",
         "children": [
           {
-            "id": "3be7ee729d7e92cd",
+            "id": "dfe41340e960c604",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/your-first-move/debugging.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "328ea3f0be7d612a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/your-first-move/hello-world.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -97,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/your-first-move/debugging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,25 +106,29 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "3be7ee729d7e92cd",
+  "active": "dfe41340e960c604",
   "lastOpenFiles": [
-    "book/elasticlunr.min.js",
-    "book/mark.min.js",
-    "book/searcher.js",
-    "book/searchindex.js",
-    "book/ayu-highlight.css",
-    "book/highlight.css",
-    "book/searchindex.json",
-    "book/favicon.svg",
-    "book/foreword",
-    "book/fonts/fonts.css",
-    "book/fonts/Spot-MonoRegularItalic.woff2",
-    "book/fonts/Spot-MonoRegular.woff2",
+    "src/your-first-move/hello-world.md",
+    "src/if.md",
+    "src/ide-support.md",
+    "src/history.md",
+    "src/your-first-move/debugging.md",
+    "samples/build/book/BuildInfo.yaml",
+    "samples/build/book/sources/dependencies/Sui/zklogin_verified_issuer.move",
+    "samples/build/book/source_maps/dependencies/Sui/zklogin_verified_issuer.mvsm",
+    "samples/build/book/bytecode_modules/dependencies/Sui/zklogin_verified_issuer.mv",
+    "samples/build/book/sources/dependencies/Sui/zklogin_verified_id.move",
+    "samples/build/book/source_maps/dependencies/Sui/zklogin_verified_id.mvsm",
+    "samples/build/book/bytecode_modules/dependencies/Sui/zklogin_verified_id.mv",
+    "samples/build/book/sources/dependencies/Sui/token.move",
+    "samples/build/book/source_maps/dependencies/Sui/token.mvsm",
+    "samples/build/book/bytecode_modules/dependencies/Sui/token.mv",
     "book/FontAwesome/fonts/fontawesome-webfont.svg",
+    "book/favicon.svg",
     "book/favicon.png",
+    "src/basic-syntax/README.md",
     "src/your-first-move/adding-tests.md",
     "src/SUMMARY.md",
-    "src/your-first-move/hello-world.md",
     "src/your-first-move/your-first-move.md",
     "src/what-is-sui.md",
     "src/what-is-move.md",
@@ -161,10 +148,6 @@
     "Writeups/Kiosk - a trading tool with rich transfer configuration.md",
     "Writeups/Transaction Block FAQ.md",
     "Images/kiosk_scheme.jpg",
-    "Display/Sui Object Display Proposal.md",
-    "Display/Display not Metadata.md",
-    "Display/Special Cases in Display.md",
-    "Guides/Using Display.md",
-    "Writeups/Coin and Balance.md"
+    "Display/Sui Object Display Proposal.md"
   ]
 }
