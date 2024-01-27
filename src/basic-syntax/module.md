@@ -12,7 +12,7 @@ Notes:
 
  -->
 
-Module is the base unit of code organization in Move. Modules are used to group and isolate code, and most of the members of the module are private to the module by default. In this section you will learn how to create a module.
+Module is the base unit of code organization in Move. Modules are used to group and isolate code, and all of the members of the module are private to the module by default. In this section you will learn how to define a module, how to declare its members and how to access them from other modules.
 
 ## Module declaration
 
@@ -25,7 +25,7 @@ Usually, a single file in the `sources/` folder contains a single module. The fi
 ```
 
 Structs, functions and constants, imports and friend declarations are all part of the module:
- 
+
 - [Structs](../syntax-basics/struct.md)
 - [Functions](../syntax-basics/function.md)
 - [Constants](../syntax-basics/constant.md)

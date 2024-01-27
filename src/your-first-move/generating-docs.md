@@ -1,5 +1,18 @@
 # Generating Documentation
 
+<!--
+
+- Generating Docs
+    - why docs are important
+    - copy-paste the example
+    - describe doc comments and what can be commented
+    - show the output of the doc command
+    - give a hint on how to set up the CIs
+    - running --doc in `sui move test`
+
+
+ -->
+
 Move CLI has a built-in tool for generating documentation for Move modules. The tool is included into the binary and available out of the box. In this section we will learn how to generate documentation for our `hello_world` module.
 
 ## Adding documentation comments

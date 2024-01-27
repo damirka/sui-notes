@@ -1,5 +1,17 @@
 # Debugging
 
+<!--
+- Debugging
+    - describe what Move Compiler can do for debugging
+    - debug is only available in test mode
+    - copy-paste the example
+    - explain the imported `std::debug` module
+    - give a hint on how to do an inline call
+    - pretty-print for strings / vectors
+    - other debug functions: print, print_stack_trace
+
+ -->
+
 Now that we have a package with a module and a test, let's take a slight detour and learn how to debug Move programs. Move Compiler has a built-in debugging tool that allows you to print intermediate values to the console. This is especially useful when you are writing tests and want to see what's going on inside the program.
 
 ## New import

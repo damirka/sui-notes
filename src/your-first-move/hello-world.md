@@ -1,8 +1,43 @@
 # Hello World
 
-It's time to write your first Move program. We'll start with the classic "Hello World" program which returns a String. First, you need to initialize a new project, the process was previously described on the [Project Setup](../getting-started/project-setup.md) page.
+<!--
 
-By running a Move CLI `new` function, you get this folder structure:
+- Hello World
+    - copy-paste the example
+    - explain the structure of the code
+    - explain the module
+    - explain the function
+    - run sui move build
+    - compare the output
+    - leave a hint, show that there's more to it
+
+-->
+
+It's time to write your first Move program. We'll start with the classic "Hello World" program which returns a String.
+
+## Initialize a project
+
+First, you need to initialize a new project. Assuming you have Sui installed, run the following command:
+
+```bash
+$ sui move new hello_world
+```
+
+Sui CLI has a `move` subcommand which is used to interact with Move packages. The `new` subcommand creates a new package with the given name in a new directory. In our case, the package name is `hello_world`, and it is located in the `hello_world` directory.
+
+To make sure that the package was created successfully, we can check the contents of the current directory, and see that there is a new `hello_world` path.
+
+```bash
+$ ls | grep hello_world
+hello_world
+```
+
+<!--
+    Revisit, decide if we should go that deep and detailed;
+    Expect the user to know how to use a terminal and a text editor?
+-->
+
+If the output looks like this, then everything is fine, and we can proceed. The folder structure of the package is the folowing:
 
 ```bash
 sources/

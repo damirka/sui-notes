@@ -1,13 +1,5 @@
 <!--
 
-    Thoughts:
-        someone will jump, some sections will be skipped, some will be read in a different order;
-
-    Audiences:
-        - people who don't know anything about Move
-        - people who know Move but don't know Sui
-        - people who know Sui but don't know Move
-        - people who tried Move and Sui and need more
 
     This is an attempt to structure the narrative in a way that makes sense, and so that it builds
     up to the next section.
@@ -41,106 +33,9 @@
                 as a tool; it's pretty neat that Move has tests, and that there's a
                 documentation generator, and that there's a way to debug the code;
 
-        - Hello World
-            - copy-paste the example
-            - explain the structure of the code
-            - explain the module
-            - explain the function
-            - run sui move build
-            - compare the output
-            - leave a hint, show that there's more to it
-        - Adding Tests
-            - describe what a test is
-            - copy-paste the example into the code
-            - explain the test
-            - run sui move test
-            - compare the output
-            - try to break the test
-            - check the output
-            - leave a hint
-            - anticipation for the next section
-        - Debugging
-            - describe what Move Compiler can do for debugging
-            - debug is only available in test mode
-            - copy-paste the example
-            - explain the imported `std::debug` module
-            - give a hint on how to do an inline call
-            - pretty-print for strings / vectors
-            - other debug functions: print, print_stack_trace
-        - Generating Docs
-            - why docs are important
-            - copy-paste the example
-            - describe doc comments and what can be commented
-            - show the output of the doc command
-            - give a hint on how to set up the CIs
-            - running --doc in `sui move test`
-        - Publishing (devnet or testnet) ???
-            - we need a quick account + network setup (work with Stefan)
-            - describe the process of publishing
-            ? should we publish the package in another section ?
-            ? it goes beyond "get to know CLI" at the same time doesn't
 
-    In order: how do we call this section? // think about it
-        - packages and how they're stored
-            - overview of packages and their contents (use a diagram)
-            - how a package is created, and what it consists of
-            - what is the package manifest
-            - describe how "name" field is used
-            - mention the "edition" field
-            - what are the folders in a package and what are they for
-            - how packages are imported (give Sui as an example)
-            - what are addresses, and how they identify packages
-            - how packages are published
-            - leave a note that packages are also *upgradable*
-        - mention what an address is, because it identifies a package
-            - address is used for packages, objects, and accounts
-            - address is a 32-byte value
-            - address is written in hexadecimal notation
-            - don't describe the type yet
-            - focus on the concept of address on blockchain and on Sui in particular
-        - then the modules, where they're stored and how they're published
-            - package consists of modules
-            - modules are stored in the sources directory
-            - there can be any number of modules in a package
-            - modules can be stored at any path under sources
-            - there can be other folders storing tests and examples
-            - compiler protects non-sources modules from being published
-            - module definition and path
-            - module members are accessed via a path
-        - how user interacts with a program
-            - mention public functions
-            - give a concept of an entry / public function without getting into details
-            - mention that functions are called in transactions
-            - mention that transactions are sent by accounts
-            - every transaction specifies object it operates on
-        - user is an account
-            - account is identified by an address
-            - account is generated from a private key
-            - account can own objects
-            - account can send transactions
-            - every transaction has a sender
-            - sender is identified by an address
-        - now objects?
-            - Sui does not have global storage
-            - storage is split into a pool of objects
-            - objects are identified by a 32-byte value
-            - objects are stored in the blockchain storage
-            - focus on infrastructure properties of objects
 
-        // note: it may be a good idea to build an e2e example, because:
-        //     - the reader will have a working application which they can modify
-        //     - it gives an overview of how things function, and shall they stop,
-        //       this is a great place to leave with some complete knowledge
-        //     - the example can contain
 
-        Hello Sui
-            - what is Sui
-
-            - Publishing (devnet or testnet)
-                - we need a quick account + network setup (work with Stefan)
-                - describe the process of publishing
-                ? should we publish the package in another section ?
-                ? it goes beyond "get to know CLI" at the same time doesn't
 
 
  -->

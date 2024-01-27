@@ -1,5 +1,20 @@
 # Adding Tests
 
+<!--
+
+- Adding Tests
+    - describe what a test is
+    - copy-paste the example into the code
+    - explain the test
+    - run sui move test
+    - compare the output
+    - try to break the test
+    - check the output
+    - leave a hint
+    - anticipation for the next section
+
+ -->
+
 To run a Move program there needs to be an environment which stores packages and executes transactions. The best way to test a Move program is to write some tests and run them locally. Move has built-in testing functionality, and the tests are written in Move as well. In this section, we will learn how to write tests for our `hello_world` module.
 
 First, let's try to run tests. All of the Move binaries support the `test` command, and this is the command we will use to run tests:

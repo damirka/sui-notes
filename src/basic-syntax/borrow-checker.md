@@ -13,6 +13,5 @@ Notes:
     - implicit copy
     - moving the value
     - unpacking a reference (mutable and immutable)
-    
 
  -->

@@ -1,5 +1,19 @@
 # Summary
 
+<!--
+
+    Thoughts:
+        - someone will jump, some sections will be skipped, some will be read in a different order;
+
+    Audiences:
+        - people who don't know anything about Move
+        - people who know Move but don't know Sui
+        - people who know Sui but don't know Move
+        - people who tried Move and Sui and need more
+
+
+ -->
+
 - [Introduction](introduction.md)
 - [Foreword](foreword.md)
 - [History](history.md)
@@ -7,12 +21,11 @@
     - [Install Sui](before-we-begin/install-sui.md)
     - [Set up your IDE](before-we-begin/ide-support.md)
     - [Move 2024](before-we-begin/move-2024.md)
-- [Your First Move](your-first-move/your-first-move.md)
+- [Your First Move](your-first-move/README.md)
     - [Hello World!](your-first-move/hello-world.md)
     - [Adding Tests](your-first-move/adding-tests.md)
     - [Debugging](your-first-move/debugging.md)
     - [Generating Docs](your-first-move/generating-docs.md)
-    - [Publishing]()
 - [Concepts](./concepts/README.md)
     - [What is a Package](./concepts/packages.md)
     - [Manifest](./concepts/manifest.md)
@@ -21,7 +34,7 @@
     - [Interacting with a Package](./concepts/user-interaction.md)
     - [Account](./concepts/what-is-an-account.md)
     - [Transaction](./concepts/what-is-a-transaction.md)
-    - [Object Storage](./concepts/object-storage.md)
+    - [Object Model](./concepts/object-model.md)
 - [Your First Sui App](./hello-sui/README.md)
     - [Hello Sui!](./hello-sui/hello-world.md)
     - [Build and Publish](./hello-sui/build-and-publish.md)
@@ -34,6 +47,7 @@
     - [Address](./basic-syntax/address.md)
     - [Struct](./basic-syntax/struct.md)
     - [Copy and Drop](./basic-syntax/copy-and-drop.md)
+    - [Importing Modules](./basic-syntax/importing-modules.md)
     - [Standard Library](./basic-syntax/standard-library.md)
     - [String](./basic-syntax/string.md)
     - [Vector](./basic-syntax/vector.md)
@@ -62,6 +76,7 @@
     - [Testing](./programmability/testing.md)
     - [Epoch and Time](./programmability/epochs.md)
     - [Package Upgrades](./programmability/package-upgrades.md)
+    - [Witness and Abstract Implementation](./programmability/witness-and-abstract-implementation.md)
     - [Transaction Blocks](./programmability/transaction-blocks.md)
     - [Authorization Patterns](./programmability/authorization-patterns.md)
     - [Cryptography and Hashing](./programmability/cryptography-and-hashing.md)
@@ -96,9 +111,6 @@
     - [Constants](constants.md)
     - [Error Handling]()
     - [Function](function.md)
-    - [Visibility]()
-        - [Public and Entry]()
-        - [Friend]()
     - [Imports](imports.md)
     - [Struct](struct.md)
     - [Standard Library]()
