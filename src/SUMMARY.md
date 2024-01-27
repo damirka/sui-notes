@@ -2,6 +2,15 @@
 
 <!--
 
+    Things that we don't have:
+        - VM and bytecode
+        - why Move is safe
+        - double spending and compiler checks
+        - borrow checker
+        - papers and research behind Move and Sui
+
+        - use capability and not address
+
     Thoughts:
         - someone will jump, some sections will be skipped, some will be read in a different order;
 
@@ -72,7 +81,7 @@
     - [Transaction Context](./programmability/transaction-context.md)
     - [Dynamic Fields](./programmability/dynamic-fields.md)
     - [Collections](./programmability/collections.md)
-    - [Abstract Classes](./programmability/abstract-classes.md)
+    - [Abstract Classes](./programmability/abstract-class.md)
     - [Testing](./programmability/testing.md)
     - [Epoch and Time](./programmability/epochs.md)
     - [Package Upgrades](./programmability/package-upgrades.md)
