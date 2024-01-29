@@ -167,7 +167,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="address"><a class="header" href="#address">Address</a></h1>
+                        <h1 id="address-type"><a class="header" href="#address-type">Address Type</a></h1>
 <!--
 
 Chapter: Basic Syntax
@@ -185,6 +185,35 @@ Links:
     - your first move
 
  -->
+<p>To represent <a href="./../concepts/address.html">addresses</a>, Move uses a special type called <code>address</code>. It is a 32 byte value that can be used to represent any address on the blockchain. Addresses are used in two syntax forms: hexadecimal addresses prefixed with <code>0x</code> and named addresses.</p>
+<pre><code class="language-move">// address literal
+let value: address = @0x1;
+
+// named address registered in Move.toml
+let value = @std;
+let other = @sui;
+</code></pre>
+<p>An address literal starts with the <code>@</code> symbol followed by a hexadecimal number or an identifier. The hexadecimal number is interpreted as a 32 byte value. The identifier is looked up in the <a href="./../concepts/manifest.html">Move.toml</a> file and replaced with the corresponding address by the compiler. If the identifier is not found in the Move.toml file, the compiler will throw an error.</p>
+<h2 id="conversion"><a class="header" href="#conversion">Conversion</a></h2>
+<p>Sui Framework offers a set of helper functions to work with addresses. Given that the address type is a 32 byte value, it can be converted to a <code>u256</code> type and vice versa. It can also be converted to and from a <code>vector&lt;u8&gt;</code> type.</p>
+<p>Example: Convert an address to a <code>u256</code> type and back.</p>
+<pre><code class="language-move">use sui::address;
+
+let addr_as_u256: u256 = address::to_u256(@0x1);
+let addr = address::from_u256(addr_as_u256);
+</code></pre>
+<p>Example: Convert an address to a <code>vector&lt;u8&gt;</code> type and back.</p>
+<pre><code class="language-move">use sui::address;
+
+let addr_as_u8: vector&lt;u8&gt; = address::to_bytes(@0x1);
+let addr = address::from_bytes(addr_as_u8);
+</code></pre>
+<p>Example: Convert an address into a string.</p>
+<pre><code class="language-move">use sui::address;
+use std::string;
+
+let addr_as_string: String = address::to_string(@0x1);
+</code></pre>
 
                     </main>
 

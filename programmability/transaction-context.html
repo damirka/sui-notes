@@ -188,12 +188,12 @@ struct TxContext has drop {
     ids_created: u64
 }
 </code></pre>
-<p>TxContext can not be constructed manually, instead, it is created by the system and passed to the function as a reference in a transaction. Any function called in a <a href="./transaction-blocks.html">Transaction Block</a> has access to the transaction context and can pass into to nested calls. While context is passed by a mutable reference, it is not possible to modify it - mutability is there because it is required to generate new <code>UID</code>s.</p>
+<p>Transaction context cannot be constructed manually or directly modified. It is created by the system and passed to the function as a reference in a transaction. Any function called in a <a href="./transaction-blocks.html">Transaction Block</a> has access to the context and can pass it into the nested calls.</p>
 <blockquote>
 <p><code>TxContext</code> has to be the last argument in the function signature.</p>
 </blockquote>
 <h2 id="reading-the-transaction-context"><a class="header" href="#reading-the-transaction-context">Reading the Transaction Context</a></h2>
-<p>All of the fields in the <code>TxContext</code> have getters (except for <code>ids_created</code>), so you can access and use them in your program. Getters don't require <code>&amp;mut</code> because they don't modify the context.</p>
+<p>With only exception of the <code>ids_created</code>, all of the fields in the <code>TxContext</code> have getters. The getters are defined in the <code>sui::tx_context</code> module and are available to the program. The getters don't require <code>&amp;mut</code> because they don't modify the context. </p>
 <pre><code class="language-move">public fun some_action(ctx: &amp;TxContext) {
     let _me = ctx.sender()
     let _epoch = ctx.epoch();

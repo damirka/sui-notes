@@ -185,6 +185,101 @@ Notes:
 Links:
     - constants (previous section)
  -->
+<h2 id="abort"><a class="header" href="#abort">Abort</a></h2>
+<p>The <code>abort</code> keyword is used to abort the execution of a transaction. It is used in combination with an abort code, which will be returned to the caller of the transaction. The abort code is an integer of type <code>u64</code> and can be any value.</p>
+<pre><code class="language-move">let user_has_access = true;
+
+// abort with a predefined constant if `user_has_access` is false
+if (!user_has_access) {
+    abort 0
+};
+
+// there's an alternative syntax using parenthesis`
+if (user_has_access) {
+   abort(0)
+};
+
+/* ... */
+</code></pre>
+<h2 id="assert"><a class="header" href="#assert">assert!</a></h2>
+<p>The <code>assert!</code> macro is a built-in macro that can be used to assert a condition. If the condition is false, the transaction will abort with the given abort code. The <code>assert!</code> macro is a convenient way to abort a transaction if a condition is not met. The macro shortens the code otherwise written with an <code>if</code> expression + <code>abort</code>.</p>
+<pre><code class="language-move">// aborts if `user_has_access` is false with abort code 0
+assert!(user_has_access, 0);
+
+// expands into:
+if (!user_has_access) {
+    abort 0
+};
+</code></pre>
+<h2 id="error-constants"><a class="header" href="#error-constants">Error constants</a></h2>
+<p>To make error codes more descriptive, it is a good practice to define error constants. Error constants are defined as <code>const</code> declarations and are usually prefixed with <code>E</code> followed by a camel case name. Error constatns are no different from other constants and don't have special handling. So their addition is purely a practice for better code readability.</p>
+<pre><code class="language-move">/// Error code for when the user has no access.
+const ENoAccess: u64 = 0;
+/// Trying to access a field that does not exist.
+const ENoField: u64 = 1;
+
+// asserts are way more readable now
+assert!(user_has_access, ENoAccess);
+assert!(field_exists, ENoField);
+</code></pre>
+<h2 id="better-error-handling"><a class="header" href="#better-error-handling">Better error handling</a></h2>
+<p>Whenever execution encounters an abort, transaction fails and abort code is returned to the caller. Move VM returns the module name that aborted the transaction and the abort code. This behavior is not fully transparent to the caller of the transaction, especially when a single function contains multiple calls to the same function which may abort. In this case, the caller will not know which call aborted the transaction, and it will be hard to debug the issue or provide meaningful error message to the user.</p>
+<pre><code class="language-move">module book::module_a {
+    use book::module_b;
+
+    public fun do_something() {
+        let field_1 = module_b::get_field(1); // may abort with 0
+        /* ... a lot of logic ... */
+        let field_2 = module_b::get_field(2); // may abort with 0
+        /* ... some more logic ... */
+        let field_3 = module_b::get_field(3); // may abort with 0
+    }
+}
+</code></pre>
+<p>The example above illustrates the case when a single function contains multiple calls which may abort. If the caller of the <code>do_something</code> function receives an abort code <code>0</code>, it will be hard to understand which call to <code>module_b::get_field</code> aborted the transaction. To address this problem, there are common patterns that can be used to improve error handling.</p>
+<h3 id="rule-1-handle-all-possible-scenarios"><a class="header" href="#rule-1-handle-all-possible-scenarios">Rule 1: Handle all possible scenarios</a></h3>
+<p>It is considered a good practice to provide a safe &quot;check&quot; function that returns a boolean value indicating whether an operation can be performed safely. If the <code>module_b</code> provides a function <code>has_field</code> that returns a boolean value indicating whether a field exists, the <code>do_something</code> function can be rewritten as follows:</p>
+<pre><code class="language-move">module book::module_a {
+    use book::module_b;
+
+    const ENoField: u64 = 0;
+
+    public fun do_something() {
+        assert!(module_b::has_field(1), ENoField);
+        let field_1 = module_b::get_field(1);
+        /* ... */
+        assert!(module_b::has_field(1), ENoField);
+        let field_2 = module_b::get_field(2);
+        /* ... */
+        assert!(module_b::has_field(1), ENoField);
+        let field_3 = module_b::get_field(3);
+    }
+}
+</code></pre>
+<p>By adding custom checks before each call to <code>module_b::get_field</code>, the developer of the <code>module_a</code> takes control over the error handling. And it allows implementing the second rule.</p>
+<h3 id="rule-2-abort-with-different-codes"><a class="header" href="#rule-2-abort-with-different-codes">Rule 2: Abort with different codes</a></h3>
+<p>The second trick, once the abort codes are handled by the caller module, is to use different abort codes for different scenarios. This way, the caller module can provide a meaningful error message to the user. The <code>module_a</code> can be rewritten as follows:</p>
+<pre><code class="language-move">module book::module_a {
+    use book::module_b;
+
+    const ENoFieldA: u64 = 0;
+    const ENoFieldB: u64 = 1;
+    const ENoFieldC: u64 = 2;
+
+    public fun do_something() {
+        assert!(module_b::has_field(1), ENoFieldA);
+        let field_1 = module_b::get_field(1);
+        /* ... */
+        assert!(module_b::has_field(1), ENoFieldB);
+        let field_2 = module_b::get_field(2);
+        /* ... */
+        assert!(module_b::has_field(1), ENoFieldC);
+        let field_3 = module_b::get_field(3);
+    }
+}
+</code></pre>
+<p>Now, the caller module can provide a meaningful error message to the user. If the caller receives an abort code <code>0</code>, it can be translated to &quot;Field 1 does not exist&quot;. If the caller receives an abort code <code>1</code>, it can be translated to &quot;Field 2 does not exist&quot;. And so on.</p>
+<p>Utilizing these two rules will make the error handling more transparent to the caller of the transaction.</p>
 
                     </main>
 
