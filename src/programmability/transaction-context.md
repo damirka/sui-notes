@@ -24,13 +24,13 @@ struct TxContext has drop {
 }
 ```
 
-TxContext can not be constructed manually, instead, it is created by the system and passed to the function as a reference in a transaction. Any function called in a [Transaction Block](./transaction-blocks.md) has access to the transaction context and can pass into to nested calls. While context is passed by a mutable reference, it is not possible to modify it - mutability is there because it is required to generate new `UID`s.
+Transaction context cannot be constructed manually or directly modified. It is created by the system and passed to the function as a reference in a transaction. Any function called in a [Transaction Block](./transaction-blocks.md) has access to the context and can pass it into the nested calls.
 
 > `TxContext` has to be the last argument in the function signature.
 
 ## Reading the Transaction Context
 
-All of the fields in the `TxContext` have getters (except for `ids_created`), so you can access and use them in your program. Getters don't require `&mut` because they don't modify the context.
+With only exception of the `ids_created`, all of the fields in the `TxContext` have getters. The getters are defined in the `sui::tx_context` module and are available to the program. The getters don't require `&mut` because they don't modify the context. 
 
 ```move
 public fun some_action(ctx: &TxContext) {

@@ -10,6 +10,7 @@
         - papers and research behind Move and Sui
 
         - use capability and not address
+        - ownership 
 
     Thoughts:
         - someone will jump, some sections will be skipped, some will be read in a different order;
