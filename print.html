@@ -1156,6 +1156,57 @@ Links:
 <!-- The Move standard library provides a set of modules  -->
 <div style="break-before: page; page-break-before: always;"></div><h1 id="vector"><a class="header" href="#vector">Vector</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="option"><a class="header" href="#option">Option</a></h1>
+<p>Option is a type that represents an optional value which may or may not exist. The concept of Option in Move is borrowed from Rust, and it is a very useful primitive in Move. <code>Option</code> is defined in the Standard Library, and is defined as follows:</p>
+<pre><code class="language-move">/// Abstraction of a value that may or may not be present.
+struct Option&lt;Element&gt; has copy, drop, store {
+    vec: vector&lt;Element&gt;
+}
+</code></pre>
+<p>The <code>Option</code> is a generic type which takes a type parameter <code>Element</code>. It has a single field <code>vec</code> which is a <code>vector</code> of <code>Element</code>. Vector can have length 0 or 1, and this is used to represent the presence or absence of a value.</p>
+<p>Option type has two variants: <code>Some</code> and <code>None</code>. <code>Some</code> variant contains a value and <code>None</code> variant represents the absence of a value. The <code>Option</code> type is used to represent the absence of a value in a type-safe way, and it is used to avoid the need for empty or <code>undefined</code> values.</p>
+<h2 id="in-practice"><a class="header" href="#in-practice">In Practice</a></h2>
+<p>To showcase why Option type is necessary, let's look at an example. Consider an application which takes a user input and stores it in a variable. Some fields are required, and some are optional. For example, a user's middle name is optional. While we could use an empty string to represent the absence of a middle name, it would require extra checks to differentiate between an empty string and a missing middle name. Instead, we can use the <code>Option</code> type to represent the middle name.</p>
+<pre><code class="language-move">module book::user_registry {
+    use std::string::String;
+    use std::option::Option;
+
+    /// A struct representing a user record.
+    struct User has copy, drop {
+        first_name: String,
+        middle_name: Option&lt;String&gt;,
+        last_name: String,
+    }
+
+    /// Create a new `User` struct with the given fields.
+    public fun register(
+        first_name: String,
+        middle_name: Option&lt;String&gt;,
+        last_name: String,
+    ): User {
+        User { first_name, middle_name, last_name }
+    }
+}
+</code></pre>
+<p>In the example above, the <code>middle_name</code> field is of type <code>Option&lt;String&gt;</code>. This means that the <code>middle_name</code> field can either contain a <code>String</code> value or be empty. This makes it clear that the middle name is optional, and it avoids the need for extra checks to differentiate between an empty string and a missing middle name.</p>
+<h2 id="using-option"><a class="header" href="#using-option">Using Option</a></h2>
+<p>To use the <code>Option</code> type, you need to import the <code>std::option</code> module and use the <code>Option</code> type. You can then create an <code>Option</code> value using the <code>some</code> or <code>none</code> methods.</p>
+<pre><code class="language-move">use std::option;
+
+// `option::some` creates an `Option` value with a value.
+let opt_name = option::some(b&quot;Alice&quot;);
+
+// `option.is_some()` returns true if option contains a value.
+assert!(opt_name.is_some(), 1);
+
+// internal value can be `borrow`ed and `borrow_mut`ed.
+assert!(option.borrow() == &amp;b&quot;Alice&quot;, 0);
+
+// `option.extract` takes the value out of the option.
+let inner = opt_name.extract();
+
+// `option.is_none()` returns true if option is None.
+assert!(opt_name.is_none(), 2);
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="string"><a class="header" href="#string">String</a></h1>
 <p>While Move does not have a built-in to represent strings, it does have a <code>string</code> module in the <a href="basic-syntax/./standard-library.html">Standard Library</a> that provides a <code>String</code> type. The <code>string</code> module represents UTF-8 encoded strings, and another module, <code>ascii</code>, provides an ASCII-only <code>String</code> type.</p>
 <p>Sui execution environment also allows Strings as transaction arguments, so in many cases, String does not to be constructed in the <a href="basic-syntax/./../concepts/what-is-a-transaction.html">Transaction Block</a>.</p>
@@ -1407,7 +1458,7 @@ Notes:
 <p>The same principle applies to Sui. If a transaction only touches the private state (the cup with coffee), it can be executed without consensus. If it touches the shared state (the coffee machine), it requires consensus. This is the fast path.</p>
 <h2 id="frozen-objects"><a class="header" href="#frozen-objects">Frozen objects</a></h2>
 <p>Consensus is only required for mutating the shared state. If the object is immutable, it is treated as a &quot;constant&quot; and can be accessed in parallel. Frozen objects can be used to share unchangable data between multiple parties without requiring consensus.</p>
-<h2 id="in-practice"><a class="header" href="#in-practice">In practice</a></h2>
+<h2 id="in-practice-1"><a class="header" href="#in-practice-1">In practice</a></h2>
 <pre><code class="language-move">module book::coffee_machine {
     use sui::object::{Self, UID};
     use sui::tx_context::TxContext;
