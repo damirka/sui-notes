@@ -10,7 +10,7 @@
         - papers and research behind Move and Sui
 
         - use capability and not address
-        - ownership 
+        - ownership
 
     Thoughts:
         - someone will jump, some sections will be skipped, some will be read in a different order;
@@ -59,9 +59,9 @@
     - [Copy and Drop](./basic-syntax/copy-and-drop.md)
     - [Importing Modules](./basic-syntax/importing-modules.md)
     - [Standard Library](./basic-syntax/standard-library.md)
-    - [String](./basic-syntax/string.md)
     - [Vector](./basic-syntax/vector.md)
-    - [Option](./basic-syntax/option.md)
+    - [Option](./basic-syntax/option.md) <!-- Option requires vector -->
+    - [String](./basic-syntax/string.md) <!-- String requires vector and option for try_* -->
     - [Control Flow](./basic-syntax/control-flow.md)
     - [Constants](./basic-syntax/constants.md)
     - [Assert and Abort](./basic-syntax/assert-and-abort.md)
