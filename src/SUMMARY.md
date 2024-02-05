@@ -84,7 +84,7 @@
     - [Collections](./programmability/collections.md)
     - [Abstract Classes](./programmability/abstract-class.md)
     - [Testing](./programmability/testing.md)
-    - [Epoch and Time](./programmability/epochs.md)
+    - [Epoch and Time](./programmability/epoch-and-time.md)
     - [Package Upgrades](./programmability/package-upgrades.md)
     - [Witness and Abstract Implementation](./programmability/witness-and-abstract-implementation.md)
     - [Transaction Blocks](./programmability/transaction-blocks.md)
@@ -104,6 +104,11 @@
     - [Building against Limits](./guides/building-against-limits.md)
     - [Testing](./guides/testing.md)
     - [Debugging](./guides/debugging.md)
+- [Appendix]()
+    - [Glossary](./appendix/glossary.md)
+    - [References]() <!-- (./appendix/references.md) -->
+    - [Contributing]() <!-- (./appendix/contributing.md) -->
+    - [Acknowledgements]() <!-- (./appendix/acknowledgements.md) -->
 
 
 

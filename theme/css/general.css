@@ -230,7 +230,6 @@ blockquote {
     color: var(--fg);
     background-color: inherit;
     border: 1px solid black;
-    text-align: center;
     position: relative;
 }
 
