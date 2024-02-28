@@ -44,14 +44,16 @@ sources/
     ...
 tests/
     ...
+examples/
+    using_my_module.move
 Move.toml
 ```
 
-The `tests` directory is optional and contains tests for the package. Code placed into the `tests` directory is not published on-chain and is only availably in tests.
+The `tests` directory is optional and contains tests for the package. Code placed into the `tests` directory is not published on-chain and is only availably in tests. The `examples` directory can be used for code examples, and is also not published on-chain.
 
 ## Published Package
 
-During development, package doesn't have an address and it needs to be set to `0x0`. Once a package is published, it get a single unique [address](./address.md) on the blockchain containing its modules' bytecode.
+During development, package doesn't have an address and it needs to be set to `0x0`. Once a package is published, it gets a single unique [address](./address.md) on the blockchain containing its modules' bytecode. A published package becomes *immutable* and can be interacted with by sending transactions.
 
 ```
 0x...

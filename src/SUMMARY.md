@@ -100,6 +100,7 @@
     - [BCS]()
     - [Coding Conventions]()
 - [Guides]()
+    - [2024 Migration Guide](./guides/2024-migration-guide.md)
     - [Upgradability Practices](./guides/upgradeability-practices.md)
     - [Building against Limits](./guides/building-against-limits.md)
     - [Testing](./guides/testing.md)

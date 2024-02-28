@@ -17,13 +17,13 @@ It's time to write your first Move program. We'll start with the classic "Hello 
 
 ## Initialize a project
 
-First, you need to initialize a new project. Assuming you have Sui installed, run the following command:
+First, you need to initialize a new project. Assuming [you have Sui installed](../before-we-begin/install-sui.md), run the following command:
 
 ```bash
 $ sui move new hello_world
 ```
 
-Sui CLI has a `move` subcommand which is used to interact with Move packages. The `new` subcommand creates a new package with the given name in a new directory. In our case, the package name is `hello_world`, and it is located in the `hello_world` directory.
+Sui CLI has a `move` subcommand which is used to work with Move packages. The `new` subcommand creates a new package with the given name in a new directory. In our case, the package name is `hello_world`, and it is located in the `hello_world` directory.
 
 To make sure that the package was created successfully, we can check the contents of the current directory, and see that there is a new `hello_world` path.
 

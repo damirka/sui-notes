@@ -1,6 +1,6 @@
 # Your first Move
 
-In this section you'll get to experience the Move language and the compiler first-hand. You'll learn how to create a package, write a simple module, test it and generate documentation. Later on you can use this section as a quick CLI reference for your own projects.
+In this section you'll get to experience the Move language and the Move compiler first-hand. You'll learn how to create a package, write a simple module, test it and generate documentation. You can also use this section as a quick CLI reference for your own projects.
 
 This guide mentions topics which you will learn later in this book. If you are not familiar with some of the concepts, don't worry, you'll learn them later. Try to focus on the task at hand and don't get distracted by the details.
 
