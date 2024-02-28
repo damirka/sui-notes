@@ -65,8 +65,16 @@ public use fun sui::transfer::transfer as MyObject.transfer;
 
 ## Macros
 
-Macros are now supported in Move 2024, and `assert!` is no longer a built-in function. Instead, it's a macro.
+Macros are introduced in Move 2024. And `assert!` is no longer a built-in function - Instead, it's a macro.
 
 ```move
-/* ... */
+// can be called as for!(0, 10, |i| call(i));
+macro fun for($start: u64, $stop: u64, $body: |u64|) {
+    let mut i = $start;
+    let stop = $stop;
+    while (i < stop) {
+        $body(i);
+        i = i + 1
+    }
+}
 ```
