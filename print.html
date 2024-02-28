@@ -1899,8 +1899,16 @@ fun use_counter() {
 public use fun sui::transfer::transfer as MyObject.transfer;
 </code></pre>
 <h2 id="macros"><a class="header" href="#macros">Macros</a></h2>
-<p>Macros are now supported in Move 2024, and <code>assert!</code> is no longer a built-in function. Instead, it's a macro.</p>
-<pre><code class="language-move">/* ... */
+<p>Macros are introduced in Move 2024. And <code>assert!</code> is no longer a built-in function - Instead, it's a macro.</p>
+<pre><code class="language-move">// can be called as for!(0, 10, |i| call(i));
+macro fun for($start: u64, $stop: u64, $body: |u64|) {
+    let mut i = $start;
+    let stop = $stop;
+    while (i &lt; stop) {
+        $body(i);
+        i = i + 1
+    }
+}
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="upgradability-practices"><a class="header" href="#upgradability-practices">Upgradability Practices</a></h1>
 <p>To talk about best practices for upgradability, we need to first understand what can be upgraded in a package. The base premise of upgradability is that an upgrade should not break public compatibility with the previous version. The parts of the module which can be used in dependent packages should not change their static signature. This applies to modules - a module can not be removed from a package, public structs - they can be used in function signatures and public functions - they can be called from other packages.</p>
