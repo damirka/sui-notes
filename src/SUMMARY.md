@@ -56,12 +56,14 @@
     - [Primitive Types](./basic-syntax/primitive-types.md)
     - [Address](./basic-syntax/address.md)
     - [Struct](./basic-syntax/struct.md)
-    - [Copy and Drop](./basic-syntax/copy-and-drop.md)
+    - [Abilities: Drop](./basic-syntax/drop-ability.md)
     - [Importing Modules](./basic-syntax/importing-modules.md)
     - [Standard Library](./basic-syntax/standard-library.md)
     - [Vector](./basic-syntax/vector.md)
     - [Option](./basic-syntax/option.md) <!-- Option requires vector -->
     - [String](./basic-syntax/string.md) <!-- String requires vector and option for try_* -->
+    - [Expression and Scope](./basic-syntax/expression-and-scope.md)
+    - [Abilities: Copy](./basic-syntax/copy-ability.md)
     - [Control Flow](./basic-syntax/control-flow.md)
     - [Constants](./basic-syntax/constants.md)
     - [Assert and Abort](./basic-syntax/assert-and-abort.md)

@@ -1,13 +1,15 @@
 // Copyright (c) Damir Shamanaev 2023
 // Licensed under the MIT License - https://opensource.org/licenses/MIT
 
+#[allow(lint(self_transfer, custom_state_change))]
 module book::postcard {
-    use std::string;
+    use std::string::String;
     use sui::tx_context::TxContext;
     use sui::object::{Self, UID};
+    use sui::transfer;
 
     /// The PostCard object.
-    struct PostCard has key, store {
+    public struct PostCard has key, store {
         /// The unique identifier of the Object.
         id: UID,
         /// The message to be printed on the gift card.
@@ -15,7 +17,7 @@ module book::postcard {
     }
 
     /// Create a new PostCard with a message.
-    public fun new(messsage: String): PostCard {
+    public fun new(message: String, ctx: &mut TxContext): PostCard {
         PostCard {
             id: object::new(ctx),
             message,
@@ -24,19 +26,19 @@ module book::postcard {
 
     /// Send the PostCard to the specified address.
     public fun send(card: PostCard, to: address) {
-        transfer::transfer(self, to)
+        transfer::transfer(card, to)
     }
 
     /// Keep the PostCard for yourself.
     public fun keep(card: PostCard, ctx: &TxContext) {
-        sui::transfer(card, tx_context::sender(ctx))
+        transfer::transfer(card, tx_context::sender(ctx))
     }
 
     #[test]
     /// A silly test - create a new PostCard and keep it.
     fun create_and_send() {
         let card = new(string::utf8(b"Hello, Sui!"));
-        let ctx = tx_context::dummy();
+        let ctx = &mut tx_context::dummy();
 
         card.keep(card, ctx);
     }

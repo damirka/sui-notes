@@ -1,4 +1,4 @@
-# Abilities: Copy and Drop
+# Abilities: Drop
 
 <!--
 
@@ -41,7 +41,7 @@ struct VeryAble has copy, drop {
 
 ## No abilities
 
-A struct without abilities cannot be discarded, or copied, or stored in the storage. We call such a struct a *Hot Potato*. It is a joke, but it is also a good way to remember that a struct without abilities is like a hot potato - it needs to be passed around and handled properly.
+A struct without abilities cannot be discarded, or copied, or stored in the storage. We call such a struct a *Hot Potato*. It is a joke, but it is also a good way to remember that a struct without abilities is like a hot potato - it needs to be passed around and handled properly. Hot Potato is one of the most powerful patterns in Move, we go in detail about it in the [TODO: authorization patterns](./../programmability/authorization-patterns.md) chapter.
 
 ## Drop ability
 

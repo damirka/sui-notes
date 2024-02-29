@@ -1,6 +1,7 @@
 // Copyright (c) Damir Shamanaev 2023
 // Licensed under the MIT License - https://opensource.org/licenses/MIT
 
+#[allow(unused_function, unused_variable)]
 module book::comments_line_2 {
     // let's add a note to everything!
     fun some_function_with_numbers() {

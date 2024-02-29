@@ -18,7 +18,7 @@ Each object has a unique 32-byte identifier - UID, it is used to access and refe
 <!--
 
     - UID is also an address
-    - Object has an owner field which can be `shared`, `account_address`, `object_owner` or `immutable`.
+    - Object has an owner field which can be w`shared`, `account_address`, `object_owner` or `immutable`.
     - Object has a version which acts as a nonce - hence Sui does not require an account nonce
     - Object has a Move type with the `key` ability
 
