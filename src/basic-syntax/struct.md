@@ -10,13 +10,13 @@ To define a custom type, you can use the `struct` keyword followed by the name o
 
 ```move
 /// A struct representing an artist.
-struct Artist {
+public struct Artist {
     /// The name of the artist.
     name: String,
 }
 
 /// A struct representing a music record.
-struct Record {
+public struct Record {
     /// The title of the record.
     title: String,
     /// The artist of the record. Uses the `Artist` type.
@@ -84,4 +84,3 @@ In the example above we unpack the `Artist` struct and create a new variable `na
 // with the value of the `name` field. The variable is intentionally unused.
 let Artist { name: _ } = artist;
 ```
-

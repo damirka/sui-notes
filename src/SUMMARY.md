@@ -53,46 +53,45 @@
 - [Syntax Basics](./basic-syntax/README.md)
     - [Module](./basic-syntax/module.md)
     - [Comments](./basic-syntax/comments.md)
-    - [Primitive Types](./basic-syntax/primitive-types.md)
-    - [Address](./basic-syntax/address.md)
+    - [Primitive Types]() <!-- (./basic-syntax/primitive-types.md) -->
+    - [Address Type](./basic-syntax/address.md)
     - [Struct](./basic-syntax/struct.md)
     - [Abilities: Drop](./basic-syntax/drop-ability.md)
-    - [Importing Modules](./basic-syntax/importing-modules.md)
-    - [Standard Library](./basic-syntax/standard-library.md)
+    - [Importing Modules]() <!-- (./basic-syntax/importing-modules.md) -->
+    - [Standard Library]() <!-- (./basic-syntax/standard-library.md) -->
     - [Vector](./basic-syntax/vector.md)
     - [Option](./basic-syntax/option.md) <!-- Option requires vector -->
     - [String](./basic-syntax/string.md) <!-- String requires vector and option for try_* -->
-    - [Expression and Scope](./basic-syntax/expression-and-scope.md)
-    - [Abilities: Copy](./basic-syntax/copy-ability.md)
-    - [Control Flow](./basic-syntax/control-flow.md)
+    - [Expression and Scope]() <!-- (./basic-syntax/expression-and-scope.md) -->
+    - [Abilities: Copy]() <!-- (./basic-syntax/copy-ability.md) -->
+    - [Control Flow]() <!-- (./basic-syntax/control-flow.md) -->
     - [Constants](./basic-syntax/constants.md)
     - [Assert and Abort](./basic-syntax/assert-and-abort.md)
-    - [Function](./basic-syntax/function.md)
+    - [Function]() <!-- (./basic-syntax/function.md) -->
     - [Struct Methods](./basic-syntax/struct-methods.md)
     - [Visibility Modifiers](./basic-syntax/visibility.md)
-    - [References](./basic-syntax/borrow-checker.md)
-    - [Generics](./basic-syntax/generics.md)
-- [It starts with an Object](./object/README.md)
-    - [The Key Ability](./object/key-ability.md)
-    - [What is an Object](./object/what-is-an-object.md)
-    - [True Ownership](./object/true-ownership.md)
-    - [Transfer Restrictions](./object/transfer-restrictions.md)
-    - [Shared State](./object/shared-state.md)
-    - [Transfer to Object?](./object/transfer-to-object.md)
-- [Advanced Programmability](./programmability/README.md)
+    - [References]() <!-- (./basic-syntax/borrow-checker.md) -->
+    - [Generics]() <!-- (./basic-syntax/generics.md) -->
+- [It starts with an Object]() <!-- (./object/README.md) -->
+    - [The Key Ability]()<!-- (./object/key-ability.md) -->
+    - [What is an Object]()<!-- (./object/what-is-an-object.md) -->
+    - [True Ownership]()<!-- (./object/true-ownership.md) -->
+    - [Transfer Restrictions]()<!-- (./object/transfer-restrictions.md) -->
+    - [Shared State]()<!-- (./object/shared-state.md) -->
+    - [Transfer to Object?]()<!-- (./object/transfer-to-object.md) -->
+- [Advanced Programmability]() <!-- (./programmability/README.md) -->
     - [Fast Path](./programmability/fast-path.md)
     - [Transaction Context](./programmability/transaction-context.md)
-    - [Dynamic Fields](./programmability/dynamic-fields.md)
-    - [Collections](./programmability/collections.md)
-    - [Abstract Classes](./programmability/abstract-class.md)
+    - [Dynamic Fields]()<!-- (./programmability/dynamic-fields.md) -->
+    - [Collections]()<!-- (./programmability/collections.md) -->
     - [Testing](./programmability/testing.md)
     - [Epoch and Time](./programmability/epoch-and-time.md)
-    - [Package Upgrades](./programmability/package-upgrades.md)
+    - [Package Upgrades]()<!-- (./programmability/package-upgrades.md) -->
     - [Witness and Abstract Implementation](./programmability/witness-and-abstract-implementation.md)
-    - [Transaction Blocks](./programmability/transaction-blocks.md)
-    - [Authorization Patterns](./programmability/authorization-patterns.md)
-    - [Cryptography and Hashing](./programmability/cryptography-and-hashing.md)
-    - [Randomness](./programmability/randomness.md)
+    - [Transaction Blocks]()<!-- (./programmability/transaction-blocks.md) -->
+    - [Authorization Patterns]()<!-- (./programmability/authorization-patterns.md) -->
+    - [Cryptography and Hashing]()<!-- (./programmability/cryptography-and-hashing.md) -->
+    - [Randomness]()<!-- (./programmability/randomness.md) -->
 - [Standards]()
     - [Coin]()
     - [Transfer Policy]()
@@ -105,8 +104,8 @@
     - [2024 Migration Guide](./guides/2024-migration-guide.md)
     - [Upgradability Practices](./guides/upgradeability-practices.md)
     - [Building against Limits](./guides/building-against-limits.md)
-    - [Testing](./guides/testing.md)
-    - [Debugging](./guides/debugging.md)
+    - [Testing]()<!-- (./guides/testing.md) -->
+    - [Debugging]()<!-- (./guides/debugging.md) -->
 - [Appendix]()
     - [Glossary](./appendix/glossary.md)
     - [References]() <!-- (./appendix/references.md) -->

@@ -24,7 +24,7 @@ Links:
 
  -->
 
-Move has a unique type system which allows defining *type abilities*. [In the previous section](./struct.md), we introduced the `struct` definition and how to use it. However, the instances of the `Artist` and `Record` structs had to be unpacked for the code to compile. This is default behavior of a struct without *abilities*. In this section, we introduce two abilities: `copy` and `drop`.
+Move has a unique type system which allows defining *type abilities*. [In the previous section](./struct.md), we introduced the `struct` definition and how to use it. However, the instances of the `Artist` and `Record` structs had to be unpacked for the code to compile. This is default behavior of a struct without *abilities*. In this section, we introduce the first ability - `drop`.
 
 ## Abilities syntax
 
