@@ -171,6 +171,36 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="visibility-modifiers"><a class="header" href="#visibility-modifiers">Visibility Modifiers</a></h1>
+<p>Every module member has a visibility. By default, all module members are <em>private</em> - meaning they are only accessible within the module they are defined in. However, you can add a visibility modifier to make a module member <em>public</em> - visible outside the module, or <em>friend</em> - visible in &quot;friend&quot; modules within the same package, or <em>entry</em> - can be called from a transaction but can't be called from other modules.</p>
+<h2 id="internal-visibility"><a class="header" href="#internal-visibility">Internal Visibility</a></h2>
+<p>A function or a struct defined in a module which has no visibility modifier is <em>private</em>.</p>
+<pre><code class="language-move">module book::internal_visbility {
+    // This function can be called from other functions in the same module
+    fun internal() { /* ... */ }
+
+    // Same module -&gt; can call internal()
+    fun call_internal() {
+        internal();
+    }
+}
+</code></pre>
+<p>Move compiler won't allow this code to compile:</p>
+<!-- TODO: add failure flag to example -->
+<pre><code class="language-move">module book::try_calling_internal {
+    use book::internal_visbility;
+
+    // Different module -&gt; can't call internal()
+    fun try_calling_internal() {
+        internal_visbility::internal();
+    }
+}
+</code></pre>
+<h2 id="public-visibility"><a class="header" href="#public-visibility">Public Visibility</a></h2>
+<p>TODO: public visibility</p>
+<h2 id="friend-visibility"><a class="header" href="#friend-visibility">Friend Visibility</a></h2>
+<p>TODO: friend visibility</p>
+<h2 id="package-visibility"><a class="header" href="#package-visibility">Package Visibility</a></h2>
+<p>TODO: 2024 <code>public(package)</code></p>
 
                     </main>
 
