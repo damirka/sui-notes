@@ -57,7 +57,7 @@
     - [Address Type](./basic-syntax/address.md)
     - [Struct](./basic-syntax/struct.md)
     - [Abilities: Drop](./basic-syntax/drop-ability.md)
-    - [Importing Modules]() <!-- (./basic-syntax/importing-modules.md) -->
+    - [Importing Modules](./basic-syntax/importing-modules.md)
     - [Standard Library]() <!-- (./basic-syntax/standard-library.md) -->
     - [Vector](./basic-syntax/vector.md)
     - [Option](./basic-syntax/option.md) <!-- Option requires vector -->
