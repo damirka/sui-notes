@@ -53,7 +53,7 @@
 - [Syntax Basics](./basic-syntax/README.md)
     - [Module](./basic-syntax/module.md)
     - [Comments](./basic-syntax/comments.md)
-    - [Primitive Types]() <!-- (./basic-syntax/primitive-types.md) -->
+    - [Primitive Types](./basic-syntax/primitive-types.md)
     - [Address Type](./basic-syntax/address.md)
     - [Struct](./basic-syntax/struct.md)
     - [Abilities: Drop](./basic-syntax/drop-ability.md)
@@ -73,17 +73,17 @@
     - [References]() <!-- (./basic-syntax/borrow-checker.md) -->
     - [Generics]() <!-- (./basic-syntax/generics.md) -->
 - [It starts with an Object]() <!-- (./object/README.md) -->
-    - [The Key Ability]()<!-- (./object/key-ability.md) -->
-    - [What is an Object]()<!-- (./object/what-is-an-object.md) -->
-    - [True Ownership]()<!-- (./object/true-ownership.md) -->
-    - [Transfer Restrictions]()<!-- (./object/transfer-restrictions.md) -->
-    - [Shared State]()<!-- (./object/shared-state.md) -->
+    - [The Key Ability]() <!-- (./object/key-ability.md) -->
+    - [What is an Object]() <!-- (./object/what-is-an-object.md) -->
+    - [True Ownership]() <!-- (./object/true-ownership.md) -->
+    - [Transfer Restrictions]() <!-- (./object/transfer-restrictions.md) -->
+    - [Shared State]() <!-- (./object/shared-state.md) -->
     - [Transfer to Object?]()<!-- (./object/transfer-to-object.md) -->
 - [Advanced Programmability]() <!-- (./programmability/README.md) -->
     - [Fast Path](./programmability/fast-path.md)
     - [Transaction Context](./programmability/transaction-context.md)
-    - [Dynamic Fields]()<!-- (./programmability/dynamic-fields.md) -->
-    - [Collections]()<!-- (./programmability/collections.md) -->
+    - [Dynamic Fields]() <!-- (./programmability/dynamic-fields.md) -->
+    - [Collections]() <!-- (./programmability/collections.md) -->
     - [Testing](./programmability/testing.md)
     - [Epoch and Time](./programmability/epoch-and-time.md)
     - [Package Upgrades]()<!-- (./programmability/package-upgrades.md) -->

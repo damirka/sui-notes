@@ -1,5 +1,7 @@
 # Abilities: Drop
 
+<!-- TODO: reiterate, given that we introduce abilities one by one -->
+
 <!--
 
 // Shall we only talk about `drop` ?

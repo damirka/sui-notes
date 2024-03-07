@@ -3,4 +3,4 @@ authors = ["Damir Shamanaev"]
 language = "en"
 multilingual = false
 src = "src"
-title = "sui-notes"
+title = "The Move Book"

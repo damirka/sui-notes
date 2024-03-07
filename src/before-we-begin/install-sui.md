@@ -4,7 +4,7 @@ Move is a compiled language, so you need to install a compiler to be able to wri
 
 ## Download Binary
 
-You can download the latest Sui binary from the [releases page](https://github.com/MystenLabs/sui/releases). The binary is available for macOS, Linux and Windows.
+You can download the latest Sui binary from the [releases page](https://github.com/MystenLabs/sui/releases). The binary is available for macOS, Linux and Windows. For education purposes and development, we recommend using the `mainnet` version.
 
 ## Install using Homebrew (MacOS)
 
@@ -14,12 +14,12 @@ You can install Sui using the [Homebrew](https://brew.sh/) package manager.
 brew install sui
 ```
 
-## Build using Cargo
+## Build using Cargo (MacOS, Linux)
 
-You can install Sui by using the Cargo package manager (requires Rust)
+You can install and build Sui locally by using the Cargo package manager (requires Rust)
 
 ```bash
-cargo install --git htt
+cargo install --git https://github.com/MystenLabs/sui.git --bin sui --branch mainnet
 ```
 
 ## Troubleshooting
