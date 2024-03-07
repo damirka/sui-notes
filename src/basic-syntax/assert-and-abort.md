@@ -69,4 +69,4 @@ assert!(field_exists, ENoField);
 
 ## Further reading
 
-We suggest reading the [Better Error Handling](./../guides/better-error-handling.md) guide for more information on error handling in Move.
+We suggest reading the [Better Error Handling](./../guides/better-error-handling.md) guide to learn about best practices for error handling in Move.
