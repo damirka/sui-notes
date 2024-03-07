@@ -58,7 +58,7 @@
     - [Struct](./basic-syntax/struct.md)
     - [Abilities: Drop](./basic-syntax/drop-ability.md)
     - [Importing Modules](./basic-syntax/importing-modules.md)
-    - [Standard Library]() <!-- (./basic-syntax/standard-library.md) -->
+    - [Standard Library](./basic-syntax/standard-library.md)
     - [Vector](./basic-syntax/vector.md)
     - [Option](./basic-syntax/option.md) <!-- Option requires vector -->
     - [String](./basic-syntax/string.md) <!-- String requires vector and option for try_* -->
@@ -104,6 +104,7 @@
     - [2024 Migration Guide](./guides/2024-migration-guide.md)
     - [Upgradability Practices](./guides/upgradeability-practices.md)
     - [Building against Limits](./guides/building-against-limits.md)
+    - [Better error handling](./guides/better-error-handling.md)
     - [Testing]()<!-- (./guides/testing.md) -->
     - [Debugging]()<!-- (./guides/debugging.md) -->
 - [Appendix]()
