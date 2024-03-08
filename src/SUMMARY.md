@@ -62,12 +62,13 @@
     - [Vector](./basic-syntax/vector.md)
     - [Option](./basic-syntax/option.md) <!-- Option requires vector -->
     - [String](./basic-syntax/string.md) <!-- String requires vector and option for try_* -->
-    - [Expression and Scope]() <!-- (./basic-syntax/expression-and-scope.md) -->
+    - [Expression](./basic-syntax/expression.md)
+    - [Scope]() <!-- (./basic-syntax/scope.md) -->
     - [Abilities: Copy]() <!-- (./basic-syntax/copy-ability.md) -->
     - [Control Flow]() <!-- (./basic-syntax/control-flow.md) -->
     - [Constants](./basic-syntax/constants.md)
     - [Assert and Abort](./basic-syntax/assert-and-abort.md)
-    - [Function]() <!-- (./basic-syntax/function.md) -->
+    - [Function](./basic-syntax/function.md)
     - [Struct Methods](./basic-syntax/struct-methods.md)
     - [Visibility Modifiers](./basic-syntax/visibility.md)
     - [References]() <!-- (./basic-syntax/borrow-checker.md) -->
