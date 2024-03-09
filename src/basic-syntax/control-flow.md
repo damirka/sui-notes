@@ -18,3 +18,11 @@ Links:
     - coding conventions (control flow)
 
  -->
+
+Control flow statements are used to control the flow of execution in a program. They are used to make decisions, to repeat a block of code, and to exit a block of code early. Sui has the following control flow statements (explained in detail below):
+
+- `if` and `else` expressions
+- `loop` and `while` loops
+- `break` and `continue` statements
+- `return` statement
+

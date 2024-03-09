@@ -46,7 +46,7 @@
     - [Transaction](./concepts/what-is-a-transaction.md)
     - [Object Model](./concepts/object-model.md)
 - [Your First Sui App](./hello-sui/README.md)
-    - [Hello Sui!](./hello-sui/hello-world.md)
+    - [Hello Sui!](./hello-sui/hello-sui.md)
     - [Build and Publish](./hello-sui/build-and-publish.md)
     - [Testing](./hello-sui/testing.md)
     - [Ideas]()
@@ -55,6 +55,7 @@
     - [Comments](./basic-syntax/comments.md)
     - [Primitive Types](./basic-syntax/primitive-types.md)
     - [Address Type](./basic-syntax/address.md)
+    - [Expression](./basic-syntax/expression.md)
     - [Struct](./basic-syntax/struct.md)
     - [Abilities: Drop](./basic-syntax/drop-ability.md)
     - [Importing Modules](./basic-syntax/importing-modules.md)
@@ -62,17 +63,27 @@
     - [Vector](./basic-syntax/vector.md)
     - [Option](./basic-syntax/option.md) <!-- Option requires vector -->
     - [String](./basic-syntax/string.md) <!-- String requires vector and option for try_* -->
-    - [Expression](./basic-syntax/expression.md)
-    - [Scope]() <!-- (./basic-syntax/scope.md) -->
-    - [Abilities: Copy]() <!-- (./basic-syntax/copy-ability.md) -->
-    - [Control Flow]() <!-- (./basic-syntax/control-flow.md) -->
+    - [Control Flow](./basic-syntax/control-flow.md)
     - [Constants](./basic-syntax/constants.md)
     - [Assert and Abort](./basic-syntax/assert-and-abort.md)
     - [Function](./basic-syntax/function.md)
     - [Struct Methods](./basic-syntax/struct-methods.md)
     - [Visibility Modifiers](./basic-syntax/visibility.md)
-    - [References]() <!-- (./basic-syntax/borrow-checker.md) -->
+    - [Ownership and Scope](./basic-syntax/ownership-and-scope.md)
+    - [Abilities: Copy](./basic-syntax/copy-ability.md)
+    - [References](./basic-syntax/references.md)
     - [Generics]() <!-- (./basic-syntax/generics.md) -->
+    - [Enums]() <!-- (./basic-syntax/enums.md) -->
+    - [Macro Functions]() <!-- (./basic-syntax/macro-functions.md) -->
+    <!--
+    Somewhere here we should mention that Move does not enforce a storage model
+    and can be used with different storage models like UTXO, account-based, or
+    object-based. And then it's okay to proceed to how Sui does it.
+    -->
+    <!--
+    Don't forget to give an explainer on what an asset is and how it translates
+    to Move and Sui. A reminder to the reader why we are learning all this.
+     -->
 - [It starts with an Object]() <!-- (./object/README.md) -->
     - [The Key Ability]() <!-- (./object/key-ability.md) -->
     - [What is an Object]() <!-- (./object/what-is-an-object.md) -->

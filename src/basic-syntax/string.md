@@ -79,6 +79,8 @@ module book::safe_strings {
 
 ## ASCII Strings
 
-<!-- What is ASCII vs UTF -->
+TODO: ASCII strings
 
-## 
+## Summary
+
+TODO: summary
