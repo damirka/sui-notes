@@ -394,10 +394,10 @@ hljs.registerLanguage('move', function(hljs) {
     ]
   };
 
-  let IDENTIFIER = {
-    scope: 'title.class',
-    match: /[a-z][a-z0-9_]*/,
-  };
+  // let IDENTIFIER = {
+  //   scope: 'title.class',
+  //   match: /[a-z][a-z0-9_]*/,
+  // };
 
   let ENTITY = {
     scope: 'title.class',
@@ -420,7 +420,7 @@ hljs.registerLanguage('move', function(hljs) {
   };
 
   let KEYWORDS = [
-    ...'public native friend entry'.split(' '),
+    ...'public native friend entry macro'.split(' '),
     ...'let mut abort'.split(' '),
     ...'if else while loop break continue'.split(' '),
   ];
@@ -483,26 +483,17 @@ hljs.registerLanguage('move', function(hljs) {
           BLOCK_COMMENT,
           ENTITY,
           {
+            scope: 'keyword',
+            match: '(fun|as)'
+          },
+          {
             scope: 'literal',
             match: '0x[0-9a-fA-F]+',
           }
           // parse address + module members + Self
         ]
       },
-      {
-        // friend declaration
-        scope: 'friend',
-        beginKeywords: 'friend',
-        end: /;/,
-        contains: [
-          BLOCK_COMMENT,
-          {
-            scope: 'title.class',
-            match: /[a-z][a-z0-9_]+/,
-            relevance: 0,
-          }
-        ]
-      },
+
       {
         // struct definition
         scope: 'struct',
@@ -599,6 +590,10 @@ hljs.registerLanguage('move', function(hljs) {
         begin: /b"/,
         beginScope: 'none',
         end: /"/,
+      },
+      {
+        scope: 'keyword',
+        match: /\bpublic\(friend\)/
       },
       {
         // function call
