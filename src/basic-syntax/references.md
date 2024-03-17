@@ -63,7 +63,8 @@ module book::references {
 
     #[test]
     fun test_card() {
-        let card = purchase();
+        // declaring variable as mutable because we modify it
+        let mut card = purchase();
 
         card.enter_metro(); // modify the card but don't move it
         assert!(card.show(), true); // read the card!
@@ -90,5 +91,5 @@ module book::references {
     Move 2024 is great but it's better to show the example with explicit &t and &mut t
     ...and then say that the example could be rewritten with the new syntax
 
-    
+
 -->

@@ -27,8 +27,43 @@ The `vector` type is a built-in type in Move, and does not need to be imported f
 The standard library provides methods to manipulate vectors. The following are some of the most commonly used operations:
 
 - `push_back`: Adds an element to the end of the vector.
-- `pop`: Removes the last element from the vector.
+- `pop_back`: Removes the last element from the vector.
 - `length`: Returns the number of elements in the vector.
 - `is_empty`: Returns true if the vector is empty.
 - `remove`: Removes an element at a given index.
 
+```move
+module book::play_vec {
+
+    #[test]
+    fun vector_methods_test() {
+        let mut v = vector[10u8, 20, 30];
+
+        assert!(v.length() == 3, 0);
+        assert!(!v.is_empty(), 1);
+
+        v.push_back(40);
+        let last_value = v.pop_back();
+
+        assert!(last_value == 40, 2);
+    }
+}
+```
+
+## Destroying a Vector of non-droppable types
+
+A vector of non-droppable types cannot be discarded. If you define a vector of types without `drop` ability, the vector value cannot be ignored. However, if the vector is empty, compiler requires an explicit call to `destroy_empty` function.
+
+```move
+module book::non_droppable_vec {
+    struct NoDrop {}
+
+    #[test]
+    fun test_destroy_empty() {
+        let v = vector<NoDrop>[];
+        // while we know that `v` is empty, we still need to call
+        // the explicit `destroy_empty` function to discard the vector.
+        v.destroy_empty();
+    }
+}
+```

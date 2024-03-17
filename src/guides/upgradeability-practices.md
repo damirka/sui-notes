@@ -42,6 +42,8 @@ TODO: Add a section about entry and friend functions
 
 ## Versioning objects
 
+<!-- This practice is for function version locking based on a shared state -->
+
 To discard previous versions of the package, the objects can be versioned. As long as the object contains a version field, and the code which uses the object expects and asserts a specific version, the code can be force-migrated to the new version. Normally, after an upgrade, admin functions can be used to update the version of the shared state, so that the new version of code can be used, and the old version aborts with a version mismatch.
 
 ```move
@@ -66,6 +68,8 @@ module book::versioned_state {
 ```
 
 ## Versioning configuration with dynamic fields
+
+<!-- This practice is for versioning the contents / structure of objects -->
 
 There's a common pattern in Sui which allows changing the stored configuration of an object while retaining the same object signature. This is done by keeping the base object simple and versioned and adding an actual configuration object as a dynamic field. Using this *anchor* pattern, the configuration can be changed with package upgrades while keeping the same base object signature.
 

@@ -1,5 +1,7 @@
 # Hello World
 
+<!-- TODO: redo the tutorial based on new CLI scaffold features -->
+
 <!--
 
 - Hello World
@@ -40,8 +42,12 @@ hello_world
 If the output looks like this, then everything is fine, and we can proceed. The folder structure of the package is the folowing:
 
 ```bash
-sources/
-Move.toml
+hello_world
+├── Move.toml
+├── src/
+│   └── hello_world.move
+└── tests/
+    └── hello_world_tests.move
 ```
 
 The address I'm using in this book is always `0x0` and the name for it is "book". You can use any address you want, but make sure to change it in the examples. To make the examples work as is, please, add the following address to the `[addresses]` section in the `Move.toml`:

@@ -4,7 +4,7 @@ Every transaction has the execution context. The context is a set of pre-defined
 
 The transaction context is available to the program through the `TxContext` struct. The struct is defined in the `sui::tx_context` module and contains the following fields:
 
-*File: sui-framework/tx_context.move*
+File: sui-framework/tx_context.move
 ```move
 /// Information about the transaction currently being executed.
 /// This cannot be constructed by a transaction--it is a privileged object created by
@@ -30,7 +30,7 @@ Transaction context cannot be constructed manually or directly modified. It is c
 
 ## Reading the Transaction Context
 
-With only exception of the `ids_created`, all of the fields in the `TxContext` have getters. The getters are defined in the `sui::tx_context` module and are available to the program. The getters don't require `&mut` because they don't modify the context. 
+With only exception of the `ids_created`, all of the fields in the `TxContext` have getters. The getters are defined in the `sui::tx_context` module and are available to the program. The getters don't require `&mut` because they don't modify the context.
 
 ```move
 public fun some_action(ctx: &TxContext) {
@@ -56,7 +56,7 @@ native fun derive_id(tx_hash: vector<u8>, ids_created: u64): address;
 
 The underlying `derive_id` function can also be utilized in your program to generate unique addresses. The function itself is not exposed, but a wrapper function `fresh_object_address` is available in the `sui::tx_context` module. It may be useful if you need to generate a unique identifier in your program.
 
-*File: sui-framework/tx_context.move*
+File: sui-framework/tx_context.move
 ```move
 /// Create an `address` that has not been used. As it is an object address, it will never
 /// occur as the address for a user.

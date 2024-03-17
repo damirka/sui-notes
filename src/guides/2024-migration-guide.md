@@ -55,12 +55,7 @@ fun play_vec() {
 In Move 2024, generic methods can be associated with types. The alias can be defined for any type privately to the module, or publicly, if the type is defined in the same module.
 
 ```move
-struct MyObject has key {
-    id: UID
-}
-
-/// now myobj.transfer(..) can be called
-public use fun sui::transfer::transfer as MyObject.transfer;
+use fun my_custom_function as vector.do_magic;
 ```
 
 ## Macros

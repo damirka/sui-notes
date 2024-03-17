@@ -30,7 +30,7 @@ module book::buffer {
         if (option::is_some(&self.expected_len)) {
             let max_len = *option::borrow(&self.expected_len);
             let future_len = self.len() + vector::length(&data);
-            assert!(future_len <= max_len, EBufferOverflow)
+            assert!(future_len <= max_len, EBufferOverflow);
         };
 
         vector::append(&mut self.data, data)

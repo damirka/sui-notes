@@ -20,7 +20,7 @@ In the example above, `a` is copied to `b` implicitly, and then explicitly copie
 
 ## Copying and Drop
 
-The *copy* ability is closely related to the *drop* ability. If a type has the *copy* ability, it should also have the *drop* ability. This is because the *drop* ability is required to clean up the resources when the instance is no longer needed. If a type has only *copy*, then managing its instances gets more complicated, as the values cannot be ignored.
+The `copy` ability is closely related to [`drop` ability](./drop-ability.md). If a type has the *copy* ability, very likely that it should have `drop` too. This is because the *drop* ability is required to clean up the resources when the instance is no longer needed. If a type has only *copy*, then managing its instances gets more complicated, as the values cannot be ignored.
 
 ```move
 public struct Value has copy, drop {}

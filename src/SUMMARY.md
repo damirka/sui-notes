@@ -47,8 +47,9 @@
     - [Object Model](./concepts/object-model.md)
 - [Your First Sui App](./hello-sui/README.md)
     - [Hello Sui!](./hello-sui/hello-sui.md)
-    - [Build and Publish](./hello-sui/build-and-publish.md)
-    - [Testing](./hello-sui/testing.md)
+    - [Using Objects](./hello-sui/module-structure.md)
+    - [Testing]()
+    - [Publish and Interact]()
     - [Ideas]()
 - [Syntax Basics](./basic-syntax/README.md)
     - [Module](./basic-syntax/module.md)
@@ -72,9 +73,10 @@
     - [Ownership and Scope](./basic-syntax/ownership-and-scope.md)
     - [Abilities: Copy](./basic-syntax/copy-ability.md)
     - [References](./basic-syntax/references.md)
-    - [Generics]() <!-- (./basic-syntax/generics.md) -->
-    - [Enums]() <!-- (./basic-syntax/enums.md) -->
-    - [Macro Functions]() <!-- (./basic-syntax/macro-functions.md) -->
+    - [Generics](./basic-syntax/generics.md)
+    - [Type Reflection](./basic-syntax/type-reflection.md)
+    <!-- - [Enums]() (./basic-syntax/enums.md) -->
+    <!-- - [Macro Functions]() (./basic-syntax/macro-functions.md) -->
     <!--
     Somewhere here we should mention that Move does not enforce a storage model
     and can be used with different storage models like UTXO, account-based, or
@@ -91,11 +93,12 @@
     - [Transfer Restrictions]() <!-- (./object/transfer-restrictions.md) -->
     - [Shared State]() <!-- (./object/shared-state.md) -->
     - [Transfer to Object?]()<!-- (./object/transfer-to-object.md) -->
-- [Advanced Programmability]() <!-- (./programmability/README.md) -->
+- [Advanced Programmability](./programmability/README.md)
     - [Fast Path](./programmability/fast-path.md)
     - [Transaction Context](./programmability/transaction-context.md)
-    - [Dynamic Fields]() <!-- (./programmability/dynamic-fields.md) -->
-    - [Collections]() <!-- (./programmability/collections.md) -->
+    - [Collections](./programmability/collections.md)
+    - [Dynamic Fields](./programmability/dynamic-fields.md)
+    - [Dynamic Collections]() <!-- (./programmability/dynamic-collections.md) -->
     - [Testing](./programmability/testing.md)
     - [Epoch and Time](./programmability/epoch-and-time.md)
     - [Package Upgrades]()<!-- (./programmability/package-upgrades.md) -->
@@ -112,7 +115,7 @@
 - [Special Topics]()
     - [BCS]()
     - [Coding Conventions]()
-- [Guides]()
+- [Guides](./guides/README.md)
     - [2024 Migration Guide](./guides/2024-migration-guide.md)
     - [Upgradability Practices](./guides/upgradeability-practices.md)
     - [Building against Limits](./guides/building-against-limits.md)

@@ -26,18 +26,27 @@ Usually, a single file in the `sources/` folder contains a single module. The fi
 
 Structs, functions and constants, imports and friend declarations are all part of the module:
 
-- [Structs](../syntax-basics/struct.md)
-- [Functions](../syntax-basics/function.md)
-- [Constants](../syntax-basics/constant.md)
-- [Imports](../syntax-basics/import.md)
-- [Friend declarations](../advanced-topics/a-friend-of-a-friend.md)
+- [Structs](./struct.md)
+- [Functions](./function.md)
+- [Constants](./constants.md)
+- [Imports](./importing-modules.md)
+- [Friend declarations]() <!-- TODO -->
+- [Method Aliases](./struct-methods.md)
 
 ## Address / Named address
 
-Module address can be specified as both: an address "literal" (does not require `@` prefix) or a named address specified in the [Package Manifest](../getting-started/package-manifest.md). In the example below, both are identical because there's a `book = "0x0"` record in the `[addresses]` section of the `Move.toml`.
+Module address can be specified as both: an address *literal* (does not require the `@` prefix) or a named address specified in the [Package Manifest](../getting-started/package-manifest.md). In the example below, both are identical because there's a `book = "0x0"` record in the `[addresses]` section of the `Move.toml`.
 
 ```Move
 {{#include ../../samples/sources/syntax-basics/module.move:4:10}}
+```
+
+## Module members
+
+Module members are declared inside the module body. To illustrate that, let's define a simple module with a struct, a function and a constant:
+
+```Move
+{{#include ../../samples/sources/syntax-basics/module_with_members.move:4:}}
 ```
 
 ## Address block
